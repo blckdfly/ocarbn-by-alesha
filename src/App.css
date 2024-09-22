@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #000000, #000398);
+  font-family: Arial, sans-serif;
+  color: rgb(169, 168, 168);
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
