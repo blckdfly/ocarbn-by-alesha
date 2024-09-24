@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import logo from './alesha-logo.png';
+import logo from './ocarbn-logo.png';
 
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
         <h1>Coming Soon</h1>
         <p>We're working hard to bring you something amazing. Stay tuned!</p>
        
-
       </div>
     </div>
   );
