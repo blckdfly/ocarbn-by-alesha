@@ -1,19 +1,21 @@
 import React from 'react';
-import './App.css';
-import logo from './alesha-logo.png';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout';
+import Home from './pages/Home';
+import Project from './pages/Project';
+import About from './pages/About';
 
 function App() {
   return (
-    <div className="coming-soon">
-      <div className="content">
-        <img src={logo} alt="Logo" className="logo" />
-        <h1>Coming Soon</h1>
-        <p>We're working hard to bring you something amazing. Stay tuned!</p>
-       
-
-      </div>
-    </div>
+    <Router>
+      <MainLayout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </MainLayout>
+    </Router>
   );
 }
 
