@@ -11,28 +11,26 @@
 
 .hero h1 {
   font-size: 2.5rem;
-  color: #1a5f7a;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: #333;
+  color: #9f9f9f;
   margin-bottom: 2rem;
 }
 
-.cta-button {
-  background-color: #2e8b57;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.aboutHome h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
-.cta-button:hover {
-  background-color: #3cb371;
+.aboutHome p {
+  font-size: 1.2rem;
+  color: #9f9f9f;
+  margin-bottom: 2rem;
 }
 
 .services {
