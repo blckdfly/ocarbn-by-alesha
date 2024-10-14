@@ -1,15 +1,232 @@
-.project {
-    padding: 2rem;
+/* Add this to your Project.css file */
+
+.hero-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #ffffff; /* Dark blue color */
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.explore-button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.project-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+  max-width: 200px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item h2 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .project-stats {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .project h1 {
-    color: #003366;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+
+  .stat-item {
+    width: 100%;
+    max-width: none;
   }
-  
-  .project p {
-    font-size: 1.1rem;
-    color: #666;
-  }
-  
+}
+
+.community-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.community-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.community-item {
+  width: 30%;
+  background-color: #1e2a38;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.community-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.community-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.featured-projects {
+  padding: 50px 20px;
+}
+
+.featured-projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.project-item {
+  width: 20%;
+  background-color: #000000;
+  padding: 20px;
+  width: 40vw;
+  border-radius: 10px;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.project-item p {
+  color: #a9a9a9;
+}
+
+.project-item .date {
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+.project-item button {
+  background-color: #48cae4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.articles-section {
+  padding: 50px 20px;
+}
+
+.articles-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.article-item {
+  width: 30%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.article-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-section {
+  padding: 50px 20px;
+  background-color: #0d1b2a;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.link-column {
+  width: 20%;
+}
+
+.link-column p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.link-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link-column ul li {
+  margin-bottom: 8px;
+  color: #a9a9a9;
+  cursor: pointer;
+}
+
+.link-column ul li:hover {
+  color: white;
+}
+
+.earth-shape {
+  width: 1200px; /* Adjust the width as per your requirement */
+  height: auto; /* Maintains the aspect ratio */
+  margin: 20px auto; /* Centers the image horizontally */
+  display: block;
+}
+
+.container-project {
+  background-color: #070E16;
+  color: #ffffff;
+  padding: 50px 20px;
+  border-top-left-radius: 50px; /* Rounded top corners */
+  border-top-right-radius: 50px; /* Rounded top corners */
+  width: 100vw; /* Full width of the viewport */
+  margin-left: calc(-50vw + 50%); /* Centering the full-width container */
+  box-sizing: border-box;
+}

@@ -1,5 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding: 2rem;
+  z-index: 1000;
+  align-items: center;
 }
 
 .header-content {
@@ -8,6 +13,9 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #090909;
+  padding: 10px;
+  border-radius: 17px;
 }
 
 .logo img {
@@ -34,4 +42,10 @@
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Example CSS for main content */
+.main-content {
+  padding-top: 100px; /* Adjust this value based on the height of your header */
 }

@@ -1,7 +1,28 @@
 footer {
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-  }
-  
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.link-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.link-column p {
+  font-weight: bold;
+}
+
+.link-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.link-column li {
+  margin: 5px 0;
+}

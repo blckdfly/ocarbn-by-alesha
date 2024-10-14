@@ -1,0 +1,105 @@
+.partners-container {
+  background-color: #0a0f1f; /* Dark background */
+  color: white;
+  padding: 50px 20px;
+  border-top-left-radius: 50px; /* Rounded top corners */
+  border-top-right-radius: 50px; /* Rounded top corners */
+  width: 100vw; /* Full width of the viewport */
+  margin-left: calc(-50vw + 50%); /* Centering the full-width container */
+  box-sizing: border-box;
+}
+
+.partners-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px; /* Space between the text and the grid */
+}
+
+/* Left section for text */
+.partners-text {
+  color: #ffffff;
+  flex: 1;
+  max-width: 50%; /* Take up 50% of the width */
+  text-align: left; /* Align text to the left */
+}
+
+.partners-text h2 {
+  color: #ffffff;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.partners-text p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+/* Right section for the grid of partner logos */
+.partners-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for logos */
+  grid-template-rows: repeat(3, 1fr); /* 3 rows for logos */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Partner item container */
+.partner-item {
+  background-color: #1e2a47; /* Darker background for logo container */
+  padding: 20px;
+  border-radius: 12px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.partner-item:hover {
+  transform: scale(1.05); /* Slight zoom-in on hover */
+}
+
+/* Partner logos */
+/* General styles for all partner logos */
+.partner-item img {
+  width: 100px; /* Default size for all logos */
+  height: auto;
+}
+
+/* Specific style for Puro Earth logo */
+.partner-item.small-logo img {
+  width: 70px; /* Smaller size for the Puro Earth logo */
+  height: auto;
+}
+
+
+.industry-leaders-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns for industry leader logos */
+  gap: 20px;
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.leader-item {
+  padding: 15px;
+  border-radius: 12px; /* Rounded corners */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leader-item img {
+  width: 100px;
+  height: auto;
+}
+
+.industry-title h2 {
+  color: #ffffff;
+  font-size: 2rem;
+}
