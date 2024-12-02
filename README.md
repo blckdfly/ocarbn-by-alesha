@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# ocarbn - Blockchain-based Blue Carbon Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Project Status](https://img.shields.io/badge/status-under%20development-yellow)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+ocarbn is a [React](https://reactjs.org/)-based web application aimed at powering the future of Blue Carbon investments through a blockchain-based marketplace platform. Our mission is to protect marine ecosystems for a resilient planet by leveraging cutting-edge blockchain technology for transparent and secure transactions.
 
-### `npm start`
+## Project Status
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+⚠️ **This project is currently under active development** ⚠️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Many features are still being implemented, and the application structure may change significantly. We appreciate your patience and interest in our project.
 
-### `npm test`
+## Features (Planned)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Home page showcasing our mission
+- Project listing and details
+- About Us page
+- wallet connection functionality
+- Blue Carbon marketplace integration with blockchain-based transactions
+- Smart contracts for secure and transparent carbon credit trading
+- Decentralized finance (DeFi) integration for blue carbon investments
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Frontend: [React JS](https://reactjs.org/)
+- Blockchain: [Base](https://www.base.org/)
+- Smart Contracts: [Solidity](https://soliditylang.org/)
+- Token: [OCBN](https://basescan.org/token/0x8788ca0209e3f4952571d47cd055bb76d6ab618c)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As this project is still in development, setup instructions will be provided once we reach a stable version suitable for external contributions or testing.
 
-### `npm run eject`
+## Contributing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+We're not currently accepting external contributions as the project is in its early stages. However, we appreciate your interest! Please check back later for updates on how you can contribute.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For any inquiries about this project, please [contact us](mailto:naufvll.xx@gmail.com).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2024 ocarbn. All rights reserved.
