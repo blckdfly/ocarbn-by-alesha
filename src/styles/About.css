@@ -1,7 +1,7 @@
 .about {
   color: #ffffff;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Aleo', sans-serif;
 }
 
 .platform-section {
@@ -16,9 +16,11 @@
   width: 48%;
 }
 
-.platform-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+.headerText {
+  text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
+  display: flex;
+  justify-content: center; /* Mengatur agar elemen div berada di tengah */
+  align-items: center; 
 }
 
 .platform-section p {
@@ -87,6 +89,12 @@
   box-sizing: border-box;
 }
 
-.HeaderAbout {
-  width: 70vw;
+.HeaderAbout img {
+  width: 100%; /* Menyesuaikan lebar gambar dengan lebar elemen kontainer */
+  max-width: 90rem; /* Batas maksimum ukuran gambar */
+  height: auto; /* Menjaga rasio aspek gambar */
+  display: block;
+  margin: 0 auto; /* Agar gambar berada di tengah */
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }

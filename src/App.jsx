@@ -4,6 +4,8 @@ import MainLayout from './layouts/MainLayout';
 import Home from './pages/Home';
 import Project from './pages/Project';
 import About from './pages/About';
+import FAQ from './pages/FaQ';
+import ProjectDetail from './pages/projectDetail';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
           <Route path="/about" element={<About />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/project-detail" element={<ProjectDetail />} />
         </Routes>
       </MainLayout>
     </Router>

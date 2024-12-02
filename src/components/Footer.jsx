@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import '../styles/Footer.css';
 
 function Footer() {
@@ -35,6 +36,9 @@ function Footer() {
             <li>About</li>
             <li>Careers</li>
             <li>Contact</li>
+            <div className='FaQLinks'>
+            <li><Link to="/faq">FAQ</Link></li> {/* Link to FAQ page */}
+            </div>
           </ul>
         </div>
       </div>

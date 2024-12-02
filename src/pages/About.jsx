@@ -43,7 +43,7 @@ function About() {
         </div>
       <div className="headerText">
         <p>
-          We envision oceans as key in fighting climate change through blockchain, we create a transparent marketplace for marine carbon credits, 
+          We envision oceans as key in fighting climate change through blockchain, we create a transparent <br></br>marketplace for marine carbon credits, 
           driving investment in blue carbon projects and protecting ocean ecosystems.
         </p>
       </div>
@@ -56,27 +56,22 @@ function About() {
           <div className="team-member">
             <img src={teamImages.Naufal} alt="Naufal Ziyaadaturrahman" />
             <h3>Naufal Ziyaadaturrahman</h3>
-            <p>Position</p>
+            <p>Project Lead</p>
           </div>
           <div className="team-member">
             <img src={teamImages.Irfan} alt="Irfan Hera Nurrohman" />
             <h3>Irfan Hera Nurrohman</h3>
-            <p>Position</p>
+            <p>Frontend Developer</p>
           </div>
           <div className="team-member">
             <img src={teamImages.Damar} alt="Athaya Damar Arthadipraja" />
             <h3>Athaya Damar Arthadipraja</h3>
-            <p>Position</p>
+            <p>Business Development</p>
           </div>
           <div className="team-member">
             <img src={teamImages.John} alt="John Devin Christianto" />
             <h3>John Devin Christianto</h3>
-            <p>Position</p>
-          </div>
-          <div className="team-member">
-            <img src={teamImages.Joe} alt="Joe Akbar Dharmawan" />
-            <h3>Joe Akbar Dharmawan</h3>
-            <p>Position</p>
+            <p>Blockchain Researcher</p>
           </div>
         </div>
       </div>

@@ -1,0 +1,52 @@
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    color: #fff;
+  }
+  
+  .faq-item {
+    background-color: #333;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-item.active {
+    background-color: #0066cc;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .faq-answer {
+    margin-top: 0.5rem;
+  }
+  
+  .gradient-circle {
+    width: 900px; 
+    height: 900px;
+    background: radial-gradient(circle, rgba(0, 61, 109, 0.5), rgba(0, 61, 109, 0.1));
+    border-radius: 50%;
+    filter: blur(100px); 
+    position: absolute; 
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; 
+  }
+
+  .HeaderAbout img {
+    width: 100%; /* Menyesuaikan lebar gambar dengan lebar elemen kontainer */
+    max-width: 120rem; /* Batas maksimum ukuran gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block;
+    margin: 0 auto; /* Agar gambar berada di tengah */
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }

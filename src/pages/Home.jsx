@@ -15,7 +15,7 @@ const Articles = () => {
         {articleCover.map(({ id, image, title, date }) => (
           <div key={id} className="article-item">
             <img src={image} alt={title} />
-            <h3>{title}</h3>
+            <p>{title}</p>
             <p>{date}</p>
           </div>
         ))}

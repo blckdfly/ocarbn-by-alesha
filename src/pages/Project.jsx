@@ -1,6 +1,7 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/Project.css';
-import earthShape from '../assets/Earth.png'
+import earthShape from '../assets/Earth.png';
 import { articleCover } from '../constant/articleConstant';
 import { community, projects } from '../constant/projectConstant';
 import Footer from '../components/Footer';
@@ -27,7 +28,7 @@ const ProjectList = () => {
       </div>
     </div>
   );
-}
+};
 
 const Articles = () => {
   return (
@@ -47,15 +48,17 @@ const Articles = () => {
 };
 
 const Container = () => {
+  const navigate = useNavigate();
+
   return (
     <div className='container-project'>
       <ProjectList />
+      <button className="load-more" onClick={() => navigate('/project-detail')}>Explore Project</button>
       <div className="divider2"></div>
       <Articles />
       <div className="divider2"></div>
       <Footer />
     </div>
-    
   );
 };
 
@@ -66,7 +69,6 @@ function Project() {
       <div className="hero-section">
         <h1>Thriving Oceans, Together</h1>
         <p>We collaborate closely with marine conservation organizations to protect ocean ecosystems and drive the adoption of sustainable blue carbon practices.</p>
-        <button className="explore-button">Explore Project</button>
         <div className="project-stats">
           <div className="stat-item">
             <h2>34</h2>
@@ -90,21 +92,13 @@ function Project() {
       <div className="community-section">
         <h2>From Our Community</h2>
         <div className="community-grid">
-          <div className="community-item">
-            <img src={community.community1} alt="community" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div className="community-item">
-            <img src={community.community2} alt="community" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div className="community-item">
-            <img src={community.community3} alt="community" />
-            <h3>Lorem Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
+          {Object.entries(community).map(([key, item]) => (
+            <div key={key} className="community-item">
+              <img src={item.img} alt="community" />
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
       <Container />
