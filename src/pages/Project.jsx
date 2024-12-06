@@ -53,7 +53,7 @@ const Container = () => {
   return (
     <div className='container-project'>
       <ProjectList />
-      <button className="load-more" onClick={() => navigate('/project-detail')}>Explore Project</button>
+      <button className="load-more" onClick={() => navigate('/projectDetail')}>Explore Project</button>
       <div className="divider2"></div>
       <Articles />
       <div className="divider2"></div>
