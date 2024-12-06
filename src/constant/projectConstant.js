@@ -4,10 +4,23 @@ import image3 from '../assets/project/project3.png';
 import image4 from '../assets/project/project4.png';
 
 export const community = {
-    community1: require('../assets/project/community1.png'),
-    community2: require('../assets/project/community2.png'),
-    community3: require('../assets/project/community3.png'),
-  };
+  community1: {
+    img: require('../assets/project/community1.png'),
+    title: 'Ocean Guardians United',
+    description: 'Partnering with Ocarbon has opened new doors for our marine conservation efforts',
+  },
+  community2: {
+    img: require('../assets/project/community2.png'),
+    title: 'Blue Carbon Innovators',
+    description: 'The ability to monitor our mangrove restoration projects in real-time has transformed our approach',
+  },
+  community3: {
+    img: require('../assets/project/community3.png'),
+    title: 'Sustainable Futures Collective',
+    description: 'Ocabon’s marketplace has empowered us to fund projects that were previously out of reach',
+  },
+};
+  
   
   export const projects = {
     project1: {
