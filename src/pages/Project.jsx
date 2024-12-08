@@ -35,10 +35,12 @@ const Articles = () => {
     <div className="articles-section">
       <h2>Latest Articles</h2>
       <div className="articles-grid">
-        {articleCover.map(({ id, image, title, date }) => (
+        {articleCover.map(({ id, image, title, date, url }) => (
           <div key={id} className="article-item">
-            <img src={image} alt={title} />
-            <h3>{title}</h3>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <img src={image} alt={title} />
+            </a>
+            <p>{title}</p>
             <p>{date}</p>
           </div>
         ))}
@@ -53,7 +55,7 @@ const Container = () => {
   return (
     <div className='container-project'>
       <ProjectList />
-      <button className="load-more" onClick={() => navigate('/projectDetail')}>Explore Project</button>
+      <button className="load-more" onClick={() => navigate('/project-detail')}>Explore Project</button>
       <div className="divider2"></div>
       <Articles />
       <div className="divider2"></div>
