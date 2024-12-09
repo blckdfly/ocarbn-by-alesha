@@ -21,7 +21,7 @@ contract BlueCarbonMarketplace is ERC20, Ownable {
     event ProjectVerified(uint256 indexed projectId);
     event CreditsPurchased(uint256 indexed projectId, address indexed buyer, uint256 amount);
 
-    constructor(address initialOwner) ERC20("Blue Carbon Credit", "BCC") Ownable(initialOwner) {
+    constructor(address initialOwner) ERC20("Ocarbn", "OCBN") Ownable(initialOwner) {
         _mint(initialOwner, 1000000 * 10**decimals()); // Mint initial supply to the initial owner
     }
 
