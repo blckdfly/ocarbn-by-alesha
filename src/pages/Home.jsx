@@ -26,6 +26,7 @@ const Articles = () => {
   );
 };
 
+
 const Container = () => {
   return (
     <div className="partners-container">
@@ -67,7 +68,6 @@ const Container = () => {
       <div className="divider2"></div>
       <Articles />
       <div className="divider2"></div>
-      <Footer />
     </div>
   );
 };
