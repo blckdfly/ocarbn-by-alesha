@@ -36,14 +36,34 @@
   text-decoration: none;
 }
 
+.connect-wallet, .wallet-address, .disconnect-wallet {
+  padding: 0.5rem 1rem; /* Sama untuk keduanya */
+  font-size: 15px; /* Sesuaikan ukuran font biar sama */
+  border-radius: 10px;
+  display: inline-block;
+  line-height: 1.5; /* Atur line-height supaya tinggi teksnya sesuai */
+  cursor: pointer;
+}
+
 .connect-wallet {
   background-color: #003D6D;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 10px;
 }
+
+.wallet-address {
+  background-color: #003D6D;
+  color: white;
+  font-weight: bold;
+}
+
+.disconnect-wallet {
+  background-color: #75140d; /* red */
+  color: white;
+  border: none;
+}
+
+
 
 /* Example CSS for main content */
 .main-content {
