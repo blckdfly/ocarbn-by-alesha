@@ -75,8 +75,6 @@ function About() {
           </div>
         </div>
       </div>
-      
-      <Footer />
     </div>
   );
 }
