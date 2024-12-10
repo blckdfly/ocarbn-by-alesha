@@ -5,12 +5,14 @@ import '../styles/Footer.css';
 function Footer() {
   return (
     <footer>
+      <h2>Dive Deeper</h2>
       <div className="footer-links">
         <div className="link-column">
           <p>Carbon Credits</p>
           <ul>
             <li>Purchase</li>
             <li>Offset</li>
+            <li>Radius</li>
             <li>API</li>
           </ul>
         </div>
@@ -36,9 +38,10 @@ function Footer() {
             <li>About</li>
             <li>Careers</li>
             <li>Contact</li>
-            <div className='FaQLinks'>
-            <li><Link to="/faq">FAQ</Link></li> {/* Link to FAQ page */}
-            </div>
+            <li>Partners</li>
+            <li>Security</li>
+            <li><Link to="/faq">FAQ</Link></li>
+            <li>irfan</li>
           </ul>
         </div>
       </div>
