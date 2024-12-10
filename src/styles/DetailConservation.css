@@ -1,0 +1,77 @@
+p {
+    color: white;
+  }
+ 
+  .detail-conservation-header img {
+    width: 100%; /* Menyesuaikan lebar gambar dengan lebar elemen kontainer */
+    max-width: 90rem; /* Batas maksimum ukuran gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block;
+    margin: 0 auto; /* Agar gambar berada di tengah */
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+
+    width: 1318px;
+    height: 393px;
+  }
+
+  h1{
+    color: white;
+  }
+
+  .parent {
+    display: grid; /* Aktifkan grid */
+    grid-template-columns: 3fr 2fr; /* Rasio 3:2 */
+    width: 100%; /* Atur lebar parent sesuai kebutuhan */
+  }
+  
+  .child-left {
+    flex: 3; /* 3 bagian dari total 5 */
+    background-color: lightblue; /* Opsional: warna untuk ngecek layout */
+  }
+  
+  .child-right {
+    flex: 2; /* 2 bagian dari total 5 */
+    background-color: lightgreen; /* Opsional: warna untuk ngecek layout */
+    display: flex; /* Bisa flex kalau mau manage lebih gampang */
+    flex-direction: column; /* Supaya stack vertikal (atas-bawah) */
+    gap: 20px; /* Jarak antar child (detail-info & stat) */
+  }
+  
+  .child-left img {
+    width: 100%; /* Biar gambar di div kiri nge-scale otomatis */
+    height: auto; /* Biar proporsi gambar tetap */
+    object-fit: cover; /* Atur cara gambar ngefit ke div */
+
+    width: 740px; /* Biar gambar di div kiri nge-scale otomatis */
+    height: 307px;
+  }
+
+  .project-name{
+    font-size: 64px;
+  }
+
+  .detail-info {
+    display: flex; /* Aktifin flexbox */
+    justify-content: space-between; /* Bagi space antara left & right */
+    gap: 20px; /* Tambahin jarak antar bagian */
+  }
+  
+  .detail-info .left,
+  .detail-info .right {
+    flex: 1; /* Bagi space sama rata */
+  }
+  
+  h5 {
+    margin-bottom: 8px; /* Jarak antar judul kecil */
+    font-size: 18px; /* Adjust ukuran h5 */
+  }
+  
+  h4 {
+    margin-bottom: 16px; /* Spasi antar elemen h4 */
+    font-size: 26px;
+  }
+  
+  .stat {
+    margin-top: 20px; /* Kalau mau kasih spesifik jarak tambahan */
+  }
