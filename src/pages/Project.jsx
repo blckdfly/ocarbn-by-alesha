@@ -6,6 +6,7 @@ import { articleCover } from '../constant/articleConstant';
 import { community, projects } from '../constant/projectConstant';
 import Footer from '../components/Footer';
 
+// asli
 const ProjectList = () => {
   return (
     <div className="project-container">
@@ -55,11 +56,16 @@ const Container = () => {
   return (
     <div className='container-project'>
       <ProjectList />
-      <button className="load-more" onClick={() => navigate('/project-detail')}>Explore Project</button>
+      <button
+      className="load-more"
+      onClick={() => window.open('/project-detail', '_blank')}
+      >
+      Explore Project
+      </button>
+
       <div className="divider2"></div>
       <Articles />
       <div className="divider2"></div>
-      <Footer />
     </div>
   );
 };
