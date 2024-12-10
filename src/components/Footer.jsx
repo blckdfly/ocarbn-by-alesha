@@ -41,7 +41,6 @@ function Footer() {
             <li>Partners</li>
             <li>Security</li>
             <li><Link to="/faq">FAQ</Link></li>
-            <li>irfan</li>
           </ul>
         </div>
       </div>
