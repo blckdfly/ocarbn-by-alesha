@@ -6,6 +6,7 @@ import Project from './pages/Project';
 import About from './pages/About';
 import FAQ from './pages/FaQ';
 import ProjectDetail from './pages/projectDetail';
+import DetailConservation from './pages/detailConservation';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/project-detail" element={<ProjectDetail />} />
+          <Route path="/detail-conservation/:id" element={<DetailConservation />} />
         </Routes>
       </MainLayout>
     </Router>
