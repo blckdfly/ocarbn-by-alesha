@@ -20,12 +20,14 @@ const ProjectDetail = () => {
                 <span>{project.year}</span>
               </div>
               <p className="project-description">{project.description}</p>
+
               <button
-                className="get-in-touch"
-                onClick={() => navigate(`/detail-conservation/${project.id}`)} // Redirect dengan ID project
+              className="get-in-touch"
+              onClick={() => window.open(`/detail-conservation/${project.id}`, "_blank")} // Membuka di tab baru
               >
                 Get in Touch
               </button>
+
             </div>
           </div>
         ))}
