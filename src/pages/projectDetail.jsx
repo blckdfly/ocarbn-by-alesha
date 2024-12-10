@@ -1,14 +1,17 @@
 import React from 'react';
 import '../styles/ProjectDetail.css';
 import projects from '../constant/projectData';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const ProjectDetail = () => {
+  const navigate = useNavigate(); // Buat navigasi
+
   return (
     <div className="project-detail-container">
       <div className="project-list-section">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
-            <img src={require(`../assets/${project.img}`).default} alt={project.name} />
+            <img src={project.img} alt={project.name} />
             <div className="project-info">
               <h3>{project.name}</h3>
               <p>{project.type}</p>
@@ -17,7 +20,12 @@ const ProjectDetail = () => {
                 <span>{project.year}</span>
               </div>
               <p className="project-description">{project.description}</p>
-              <button className="get-in-touch">Get in Touch</button>
+              <button
+                className="get-in-touch"
+                onClick={() => navigate(`/detail-conservation/${project.id}`)} // Redirect dengan ID project
+              >
+                Get in Touch
+              </button>
             </div>
           </div>
         ))}
