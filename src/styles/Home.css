@@ -25,6 +25,9 @@
   margin-top: 7rem; /* Remove top margin to keep it close to the h1 */
 }
 
+.industry-title {
+  margin-left: 3rem;
+}
 .aboutHome h1 {
   font-size: 2.5rem;
   color: #ffffff;

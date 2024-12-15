@@ -5,7 +5,6 @@ import { partners, industryLeaders } from '../constant/logoConstant';
 import { articleCover } from '../constant/articleConstant';
 import aboutImage from '../assets/about-home.png';
 import verraCertified from '../assets/verra.png'
-import Footer from '../components/Footer';
 
 const Articles = () => {
   return (

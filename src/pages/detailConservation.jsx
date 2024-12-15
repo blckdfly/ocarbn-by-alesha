@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/DetailConservation.css';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import projects from '../constant/projectData';
 import headerDetailConservation from '../assets/project/header-detail-conservation.png';
 
@@ -60,22 +60,25 @@ function DetailConservation() {
           </div>
           
           <div className='stat'>
+            <h3>Stats</h3>
 
-          <h3>Stats</h3>
+            <h5>Total Retirements</h5>
+            <h4><b>{project.totalRetirement}</b></h4>
 
-          <h5>Total Retirements</h5>
-          <h4><b>{project.totalRetirement}</b></h4>
-
-          <h5>Remaining Supply</h5>
-          <h4><b>{project.remainingSupply}</b></h4>
+            <h5>Remaining Supply</h5>
+            <h4><b>{project.remainingSupply}</b></h4>
           </div>
           
+          {/* Tambahkan button menuju Transaction.jsx */}
+          <div className='transaction-button'>
+            <Link to="/transaction">
+              <button className="btn btn-primary">Go to Transaction</button>
+            </Link>
+          </div>
         </div>
       </div>
 
-
     </div>
-    
   );
 }
 

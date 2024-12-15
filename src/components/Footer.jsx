@@ -4,36 +4,38 @@ import '../styles/Footer.css';
 
 function Footer() {
   return (
-    <footer>
-      <h2>Dive Deeper</h2>
+    <footer className="footer">
+      <h2 className="footer-title">Dive Deeper</h2>
       <div className="footer-links">
         <div className="link-column">
-          <p>Carbon Credits</p>
+          <p className="column-title">Carbon Credits</p>
           <ul>
             <li>Purchase</li>
-            <li>Offset</li>
+            <li>Offtake</li>
             <li>Radius</li>
             <li>API</li>
           </ul>
         </div>
         <div className="link-column">
-          <p>Rebalance the Planet</p>
+          <p className="column-title">Rebalance the Planet</p>
           <ul>
             <li>Trust and Safety</li>
             <li>Publications</li>
             <li>Suppliers</li>
+            <li>Distributions</li>
           </ul>
         </div>
         <div className="link-column">
-          <p>Resources</p>
+          <p className="column-title">Resources</p>
           <ul>
-            <li>Overview</li>
-            <li>Governance</li>
-            <li>Verifications</li>
+            <li>Customer</li>
+            <li>News</li>
+            <li>Documentation</li>
+            <li>Guide Types</li>
           </ul>
         </div>
         <div className="link-column">
-          <p>Company</p>
+          <p className="column-title">Company</p>
           <ul>
             <li>About</li>
             <li>Careers</li>
@@ -44,7 +46,9 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <p>&copy; 2024 ocarbn. All rights reserved.</p>
+      <div className="footer-bottom">
+        <p className="footer-copyright">&copy; 2024 Ocarbn. All rights reserved.</p>
+      </div>
     </footer>
   );
 }

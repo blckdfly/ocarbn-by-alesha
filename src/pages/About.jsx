@@ -2,7 +2,6 @@ import React from 'react';
 import '../styles/About.css';
 import { teamImages } from '../constant/peopleConstant';
 import HeaderAbout from '../assets/header-bg.png'
-import Footer from '../components/Footer';
 
 const AboutUs = () => {
   return (

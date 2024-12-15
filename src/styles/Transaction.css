@@ -1,0 +1,93 @@
+Transaction.css 
+
+.about {
+    color: #ffffff;
+    padding: 20px;
+    font-family: 'Aleo', sans-serif;
+}
+
+.HeaderAbout img {
+  width: 1200px; /* Menyesuaikan lebar gambar dengan lebar elemen kontainer */
+  max-height: 350px; /* Batas maksimum ukuran gambar */
+  height: auto; /* Menjaga rasio aspek gambar */
+  display: block;
+  margin: 0 auto; /* Agar gambar berada di tengah */
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+
+  .headerText {
+    text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
+    display: flex;
+    justify-content: center; /* Mengatur agar elemen div berada di tengah */
+    align-items: center;
+    font-size: bold;
+  }
+
+  .container-about {
+    margin: 10px auto;
+    background-color: #070E16;
+    color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 50px;
+    width: 100vw; /* Full width of the viewport */
+    margin-left: calc(-50vw + 50%); /* Centering the full-width container */
+    box-sizing: border-box;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .available {
+    font-size: 14px;
+    color: #999;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    border: 2px solid #1c8c8e;
+    border-radius: 8px;
+    background-color: #070E16;
+    color: #ffffff;
+  }
+
+  .form-input::placeholder {
+    color: #888888;
+  }
+
+  .text-content {
+    border-bottom: 1px solid #888888;
+  }
+
+  .submit-button {
+    border: 2px solid #007bff; /* Warna biru */
+    color: #007bff; /* Warna teks biru */
+    display: block; /* Agar bisa di-center */
+    margin: 0 auto; /* Menengahkan tombol */
+    padding: 10px 20px; /* Menambahkan padding untuk memperbesar tombol */
+    text-align: center; /* Menjaga teks tetap terpusat */
+    width: fit-content; /* Lebar tombol sesuai dengan konten */
+    border-radius: 5px; /* Opsional: untuk sudut yang lebih halus */
+    background-color: transparent; /* Membuat latar belakang tombol transparan */
+}
+
+  .submit-button:hover {
+    background-color: #007bff; /* Latar belakang biru saat hover */
+    color: white; /* Warna teks putih saat hover */
+}

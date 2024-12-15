@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/FaQ.css';
 import HeaderAbout from '../assets/header-bg.png'
-import Footer from '../components/Footer';
 
 const faqData = [
     {
@@ -75,7 +74,6 @@ function FAQ() {
           {activeIndex === index && <div className="faq-answer">{faq.answer}</div>}
         </div>
       ))}
-      <Footer />
     </div>
   );
 }

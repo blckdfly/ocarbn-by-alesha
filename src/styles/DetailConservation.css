@@ -26,13 +26,11 @@ p {
   }
   
   .child-left {
-    flex: 3; /* 3 bagian dari total 5 */
-    background-color: lightblue; /* Opsional: warna untuk ngecek layout */
+    flex: 3;  /* Opsional: warna untuk ngecek layout */
   }
   
   .child-right {
     flex: 2; /* 2 bagian dari total 5 */
-    background-color: lightgreen; /* Opsional: warna untuk ngecek layout */
     display: flex; /* Bisa flex kalau mau manage lebih gampang */
     flex-direction: column; /* Supaya stack vertikal (atas-bawah) */
     gap: 20px; /* Jarak antar child (detail-info & stat) */
@@ -75,3 +73,42 @@ p {
   .stat {
     margin-top: 20px; /* Kalau mau kasih spesifik jarak tambahan */
   }
+
+  .btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 24px;
+    color: white;
+    background-color: #007BFF; /* Warna biru primer */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Warna biru yang lebih gelap untuk hover */
+    transform: scale(1.05); /* Sedikit zoom saat dihover */
+  }
+  
+  .btn:active {
+    background-color: #003f7f; /* Warna biru yang lebih gelap lagi saat klik */
+    transform: scale(0.95); /* Efek mengecil saat klik */
+  }
+  
+  .btn-primary {
+    background-color: #003D6D; /* Warna hijau untuk tombol spesifik */
+  }
+  
+  .btn-primary:hover {
+    background-color: #003D6D; /* Hijau lebih gelap saat hover */
+  }
+  
+  .transaction-button {
+    margin-top: 20px;
+    text-align: center; /* Posisikan tombol di tengah */
+  }
+  
