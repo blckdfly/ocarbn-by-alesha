@@ -27,7 +27,7 @@ Many features are still being implemented, and the application structure may cha
 - Frontend: [React JS](https://reactjs.org/)
 - Blockchain: [Base](https://www.base.org/)
 - Smart Contracts: [Solidity](https://soliditylang.org/)
-- Token: [OCBN](https://basescan.org/token/0x8788ca0209e3f4952571d47cd055bb76d6ab618c)
+- Token: [OCBT](https://basescan.org/token/0x8F273b2d1791FAad981aA723D8a4D814513A5fAc)
 
 ## Getting Started
 
