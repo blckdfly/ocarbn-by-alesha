@@ -21,7 +21,6 @@ const ProjectDetail = () => {
               </div>
               <p className="project-description">{project.description}</p>
 
-              {/* Navigasi ke halaman Detail Conservation */}
               <button
                 className="get-in-touch"
                 onClick={() => navigate(`/detail-conservation/${project.id}`)} // Gunakan navigate
