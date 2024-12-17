@@ -1,3 +1,7 @@
+*{
+  color: white;
+}
+
 p {
     color: white;
   }
@@ -34,6 +38,13 @@ p {
     display: flex; /* Bisa flex kalau mau manage lebih gampang */
     flex-direction: column; /* Supaya stack vertikal (atas-bawah) */
     gap: 20px; /* Jarak antar child (detail-info & stat) */
+  }
+
+  .map img {
+    width: 100%; /* Gambar akan memenuhi lebar kontainer */
+    max-width: 500px; /* Batasi lebar gambar maksimal */
+    height: auto; /* Pastikan proporsi gambar tetap */
+    border-radius: 8px; /* Tambahkan sudut melengkung jika diinginkan */
   }
   
   .child-left img {
