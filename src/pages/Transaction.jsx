@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { getContract } from "../blockchain/blockchain";
 import "../styles/Transaction.css";
+import { useParams } from "react-router-dom"; 
+import headerDetailConservation from '../assets/project/header-detail-conservation.png';
 
 const Transaction = () => {
     const [tonnes, setTonnes] = useState(0);
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");
-    const [projectId, setProjectId] = useState(1);
     const [isProcessing, setIsProcessing] = useState(false);
-
+    const [projectId, setProjectId] = useState(useParams().projectId);
+    
     const handleRetireCredits = async () => {
         if (!tonnes || !name || !message) {
             alert("Please fill out all fields before retiring credits.");
@@ -39,10 +41,17 @@ const Transaction = () => {
 
     return (
         <div className="container-transaction">
+            <div className='detail-conservation-header'>
+                <img src={headerDetailConservation} alt="Header Detail Conservation" />
+            </div>
+
             <h2>Retire Carbon Credits</h2>
+            <p>You are retiring carbon credits from this project. The information below will be broadcasted publicly and can be used to verify your environmental claim. This transaction is permanent; the information cannot be edited once your transaction is complete so be sure to confirm everything is correct before continuing. You can retire these credits for yourself or on behalf of another person or organization.</p>
 
             <div className="row">
-                <label className="form-label">Project ID</label>
+                <label className="form-label">Project ID: </label>
+                value={projectId}
+                onChange={(e) => setProjectId(e.target.value)}
                 <input
                     type="number"
                     className="form-input"
@@ -53,7 +62,10 @@ const Transaction = () => {
             </div>
 
             <div className="row">
-                <label className="form-label">How Many Tonnes?</label>
+                <label className="form-label">How Many tonnes of carbon do you want to remove?</label>
+                <div className="availability">
+                    <h5>Available tonnes</h5>
+                </div>
                 <input
                     type="number"
                     className="form-input"
@@ -64,7 +76,7 @@ const Transaction = () => {
             </div>
 
             <div className="row">
-                <label className="form-label">Your Name</label>
+                <label className="form-label">Who will this retirement be credited to?</label>
                 <input
                     type="text"
                     className="form-input"
@@ -83,6 +95,15 @@ const Transaction = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
+            </div>
+
+            <div className="row">
+                <div className="warning-logo">
+
+                </div>
+                <div className="warning-desc">
+                    <p>Before submitting, please double-check that your retirement name or message does not contain any sensitive personal information, such as email addresses, phone numbers, or private details. Once this information is submitted, it will be permanently recorded on a public blockchain, where it cannot be edited, altered, or removed. This ensures transparency and security, but it also means that any information you provide will be visible to the public indefinitely. Please proceed carefully to protect your privacy and maintain the integrity of your data.</p>
+                </div>
             </div>
 
             <button
