@@ -1,44 +1,39 @@
-Transaction.css 
-
-.about {
-    color: #ffffff;
-    padding: 20px;
-    font-family: 'Aleo', sans-serif;
-}
-
-.HeaderAbout img {
-  width: 1200px; /* Menyesuaikan lebar gambar dengan lebar elemen kontainer */
-  max-height: 350px; /* Batas maksimum ukuran gambar */
+.detail-conservation-header img {
+  width: 100%; /* Menyesuaikan lebar gambar dengan lebar elemen kontainer */
+  max-width: 90rem; /* Batas maksimum ukuran gambar */
   height: auto; /* Menjaga rasio aspek gambar */
   display: block;
   margin: 0 auto; /* Agar gambar berada di tengah */
   margin-top: 6rem;
   margin-bottom: 3rem;
-  filter: brightness(50%);
-  object-fit: cover;
+
+  width: 1318px;
+  height: 393px;
 }
 
-  .headerText {
-    text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
-    display: flex;
-    justify-content: center; /* Mengatur agar elemen div berada di tengah */
-    align-items: center;
-    font-size: bold;
-  }
+h2{
+  color:white;
+  font-size: 64;
+  font-weight: bold;    
+  margin-bottom: 20px; 
+}
 
-  .container-about {
-    margin: 10px auto;
-    background-color: #070E16;
-    color: #ffffff;
-    padding: 20px 20px;
-    border-radius: 50px;
-    width: 100vw; /* Full width of the viewport */
-    margin-left: calc(-50vw + 50%); /* Centering the full-width container */
-    box-sizing: border-box;
+p{
+  font-size: 22;
+  margin-bottom: 55px; 
+  text-align: justify;
+}
+
+h5{
+  color: white;
+
+}
+  .container-transaction{
+    /* padding: 100px; */
   }
 
   .row {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
   }
