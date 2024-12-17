@@ -1,12 +1,12 @@
 .project-detail-container {
     background-color: #121212;
     color: white;
-    padding: 20px;
+    padding: 100px;
   }
   
   .project-list-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom tetap */
     gap: 20px;
   }
   
@@ -20,6 +20,8 @@
   
   .project-card img {
     width: 100%;
+    height: auto; /* Menjaga rasio gambar */
+    object-fit: cover; /* Memastikan gambar tetap rapi */
     border-radius: 8px;
   }
   
@@ -38,6 +40,11 @@
     font-weight: bold;
     margin: 10px 0;
   }
+
+  .project-description {
+    text-align: justify;
+    min-height: 150px;
+  }  
   
   .get-in-touch {
     background-color: #00bcd4;
@@ -46,6 +53,12 @@
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
+
+    margin-top: auto;
+  }
+
+  .get-in-touch:hover {
+    background-color: #0056b3;
   }
   
   .footer-section {
