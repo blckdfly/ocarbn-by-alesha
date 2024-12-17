@@ -7,7 +7,7 @@ import About from './pages/About';
 import FAQ from './pages/FaQ';
 import ProjectDetail from './pages/projectDetail';
 import DetailConservation from './pages/detailConservation';
-import Transaction from './pages/Transaction'; // Import halaman transaksi
+import Transaction from './pages/Transaction'; 
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/project-detail" element={<ProjectDetail />} />
           <Route path="/detail-conservation/:id" element={<DetailConservation />} />
-          <Route path="/transaction" element={<Transaction />} /> {/* Tambahkan rute ini */}
+          <Route path="/transaction/:id" element={<Transaction />} /> 
         </Routes>
       </MainLayout>
     </Router>
