@@ -5,6 +5,13 @@ import project4 from '../assets/project/project4.png';
 import project5 from '../assets/project/project5.png';
 import project6 from '../assets/project/project6.png';
 
+import map1 from '../assets/project/map-1.png';
+import map2 from '../assets/project/map-2.png';
+import map3 from '../assets/project/map-3.png';
+import map4 from '../assets/project/map-4.png';
+import map5 from '../assets/project/map-5.png';
+import map6 from '../assets/project/map-6.png';
+
 const projects = [
   {
     id: 1, 
@@ -22,7 +29,8 @@ const projects = [
     idProject: 'VNK-810193',
     tonnes: 954,
     totalRetirement: 74,
-    remainingSupply: 880
+    remainingSupply: 880,
+    map: map1
   },
   {
     id: 2,
@@ -40,7 +48,8 @@ const projects = [
     idProject: 'VNK-239842',
     tonnes: 475,
     totalRetirement: 89,
-    remainingSupply: 386
+    remainingSupply: 386,
+    map: map2
   },
   {
     id: 3,
@@ -58,7 +67,8 @@ const projects = [
     idProject: 'VNK-387520',
     tonnes: 712,
     totalRetirement: 62,
-    remainingSupply: 650
+    remainingSupply: 650,
+    map: map3
   },
   {
     id: 4,
@@ -76,7 +86,8 @@ const projects = [
     idProject: 'VNK-601749',
     tonnes: 1234,
     totalRetirement: 215,
-    remainingSupply: 1019
+    remainingSupply: 1019,
+    map: map4
   },
   {
     id: 5,
@@ -94,7 +105,8 @@ const projects = [
     idProject: 'VNK-524319',
     tonnes: 890,
     totalRetirement: 155,
-    remainingSupply: 735
+    remainingSupply: 735,
+    map: map5
   },
   {
     id: 6,
@@ -112,7 +124,8 @@ const projects = [
     idProject: 'VNK-930821',
     tonnes: 1320,
     totalRetirement: 280,
-    remainingSupply: 1040
+    remainingSupply: 1040,
+    map: map6
   }
 ];
 
