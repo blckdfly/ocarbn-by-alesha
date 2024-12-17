@@ -19,8 +19,6 @@ function DetailConservation() {
         <img src={headerDetailConservation} alt="Header Detail Conservation" />
       </div>
 
-      <h1>PEMBATAS</h1>
-
       <div className='parent'>
         <div className='child child-left'>
           <img src={project.img} alt={project.name} />
@@ -38,6 +36,11 @@ function DetailConservation() {
         </div>
         
         <div className='child child-right'>
+        
+          <div className='map'>
+            <img src={project.map} alt="Project Map" />
+          </div>
+
           <div className='detail-info'>
             <div className='left'>
               <h5>Project Scale</h5>
@@ -70,11 +73,21 @@ function DetailConservation() {
           </div>
           
           {/* Tambahkan button menuju Transaction.jsx */}
-          <div className='transaction-button'>
+          {/* versi sebelum passing */}
+          {/* <div className='transaction-button'>
             <Link to="/transaction">
               <button className="btn btn-primary">Go to Transaction</button>
             </Link>
+          </div> */}
+
+          {/* versi sesudah passing */}
+          <div className='transaction-button'>
+            <Link to={`/transaction/${project.id}`}>
+              <button className="btn btn-primary">Go to Transaction</button>
+            </Link>
           </div>
+
+
         </div>
       </div>
 
