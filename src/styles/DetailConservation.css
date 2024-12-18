@@ -59,6 +59,9 @@ p {
   .project-name{
     font-size: 64px;
   }
+  .project-long-desc{
+    text-align: justify;
+  }
 
   .detail-info {
     display: flex; /* Aktifin flexbox */
@@ -123,3 +126,15 @@ p {
     text-align: center; /* Posisikan tombol di tengah */
   }
   
+  .gradient-circle {
+    width: 900px; 
+    height: 900px;
+    background: radial-gradient(circle, rgba(0, 61, 109, 0.5), rgba(0, 61, 109, 0.1));
+    border-radius: 50%;
+    filter: blur(100px); 
+    position: absolute; 
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; 
+  }
