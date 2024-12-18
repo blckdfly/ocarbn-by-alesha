@@ -82,3 +82,16 @@
     margin: 5px 0;
   }
   
+  .gradient-circle {
+    width: 900px; 
+    height: 900px;
+    background: radial-gradient(circle, rgba(0, 61, 109, 0.5), rgba(0, 61, 109, 0.1));
+    border-radius: 50%;
+    filter: blur(100px); 
+    position: absolute; 
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; 
+  }
+  
