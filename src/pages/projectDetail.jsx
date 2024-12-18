@@ -8,6 +8,9 @@ const ProjectDetail = () => {
 
   return (
     <div className="project-detail-container">
+
+      <div className="gradient-circle"></div>
+      
       <div className="project-list-section">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
@@ -23,7 +26,7 @@ const ProjectDetail = () => {
 
               <button
                 className="get-in-touch"
-                onClick={() => navigate(`/detail-conservation/${project.id}`)} // Gunakan navigate
+                onClick={() => navigate(`/detail-conservation/${project.id}`)}
               >
                 Get in Touch
               </button>
