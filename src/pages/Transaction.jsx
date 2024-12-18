@@ -41,6 +41,7 @@ const Transaction = () => {
 
     return (
         <div className="container-transaction">
+            <div className="gradient-circle"></div>
             <div className='detail-conservation-header'>
                 <img src={headerDetailConservation} alt="Header Detail Conservation" />
             </div>
@@ -50,8 +51,7 @@ const Transaction = () => {
 
             <div className="row">
                 <label className="form-label">Project ID: </label>
-                value={projectId}
-                onChange={(e) => setProjectId(e.target.value)}
+
                 <input
                     type="number"
                     className="form-input"
