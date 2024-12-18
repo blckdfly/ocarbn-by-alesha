@@ -13,8 +13,10 @@ function DetailConservation() {
   }
 
   return (
+    
     <div className="detail-conservation">
-
+      <div className="gradient-circle"></div>
+      
       <div className='detail-conservation-header'>
         <img src={headerDetailConservation} alt="Header Detail Conservation" />
       </div>
@@ -72,15 +74,6 @@ function DetailConservation() {
             <h4><b>{project.remainingSupply}</b></h4>
           </div>
           
-          {/* Tambahkan button menuju Transaction.jsx */}
-          {/* versi sebelum passing */}
-          {/* <div className='transaction-button'>
-            <Link to="/transaction">
-              <button className="btn btn-primary">Go to Transaction</button>
-            </Link>
-          </div> */}
-
-          {/* versi sesudah passing */}
           <div className='transaction-button'>
             <Link to={`/transaction/${project.id}`}>
               <button className="btn btn-primary">Go to Transaction</button>
