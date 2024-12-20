@@ -24,24 +24,28 @@ export const community = {
   
   export const projects = {
     project1: {
+      id: 1,
       title: 'Alesha',
       description: 'Mangroves conservation at critical areas with community participation.',
       date: '19 Jun 2025',
       img: image1,
     },
     project2: {
+      id: 2,
       title: 'Varuna',
       description: 'Seagrass restoration with cutting-edge and data-driven monitoring.',
       date: '19 Jun 2025',
       img: image2,
     },
     project3: {
+      id: 3,
       title: 'Aneira',
       description: 'Mangroves restoration in coastal ecosystems with carbon benefits.',
       date: '19 Jun 2025',
       img: image3,
     },
     project4: {
+      id: 4,
       title: 'Eulalie',
       description: 'Rehabilitation of degraded mangrove ecosystems for coastal protection.',
       date: '19 Jun 2025',
