@@ -5,13 +5,6 @@ import project4 from '../assets/project/project4.png';
 import project5 from '../assets/project/project5.png';
 import project6 from '../assets/project/project6.png';
 
-import map1 from '../assets/project/map-1.png';
-import map2 from '../assets/project/map-2.png';
-import map3 from '../assets/project/map-3.png';
-import map4 from '../assets/project/map-4.png';
-import map5 from '../assets/project/map-5.png';
-import map6 from '../assets/project/map-6.png';
-
 const projects = [
   {
     id: 1, 
@@ -30,7 +23,7 @@ const projects = [
     tonnes: 954,
     totalRetirement: 74,
     remainingSupply: 880,
-    map: map1
+    gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.256428677796!2d119.47189437527256!3d-5.062132694914603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbeff2a30c01bfb%3A0x95b96cf5e384b46e!2sWisata%20Mangrove%20PIP%20Makassar!5e0!3m2!1sen!2sid!4v1734718413844!5m2!1sen!2sid"
   },
   {
     id: 2,
@@ -49,7 +42,7 @@ const projects = [
     tonnes: 475,
     totalRetirement: 89,
     remainingSupply: 386,
-    map: map2
+    gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.1904850157043!2d114.93723737529827!3d-8.183557391847835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd19d83a152535b%3A0xbc4ea6e9a1995b73!2sWEST%20COAST%20EAGLES!5e0!3m2!1sen!2sid!4v1734719208229!5m2!1sen!2sid"
   },
   {
     id: 3,
@@ -68,7 +61,7 @@ const projects = [
     tonnes: 712,
     totalRetirement: 62,
     remainingSupply: 650,
-    map: map3
+    gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37642.96011992371!2d105.80901241403588!3d-5.300120226797522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40591ea89fbde1%3A0x75f5c932845d6341!2sTaman%20Wisata%20Mangrove%20Pandan%20Alas!5e0!3m2!1sen!2sid!4v1734719300360!5m2!1sen!2sid"
   },
   {
     id: 4,
@@ -87,7 +80,7 @@ const projects = [
     tonnes: 1234,
     totalRetirement: 215,
     remainingSupply: 1019,
-    map: map4
+    gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.700087371497!2d130.7866512752567!3d-0.44109429955457846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5f02b7d5694225%3A0x77f88f82ed0bf2e9!2sMangrove%20Beach!5e0!3m2!1sen!2sid!4v1734719382247!5m2!1sen!2sid"
   },
   {
     id: 5,
@@ -106,7 +99,7 @@ const projects = [
     tonnes: 890,
     totalRetirement: 155,
     remainingSupply: 735,
-    map: map5
+    gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.2995760778927!2d124.81682817525812!3d1.580946498404314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3287999889bc94f5%3A0x9fa62945b7ab89ac!2sMangrove%20Park%20Bahowo!5e0!3m2!1sen!2sid!4v1734719431582!5m2!1sen!2sid" 
   },
   {
     id: 6,
@@ -125,7 +118,7 @@ const projects = [
     tonnes: 1320,
     totalRetirement: 280,
     remainingSupply: 1040,
-    map: map6
+    gmaps: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.952094474199!2d116.84253467525731!3d-1.1939454987946496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df148f7f1221a2b%3A0xdfc02d03a677cec!2sMangrove%20Center%20Graha%20Indah!5e0!3m2!1sen!2sid!4v1734719489333!5m2!1sen!2sid"
   }
 ];
 
