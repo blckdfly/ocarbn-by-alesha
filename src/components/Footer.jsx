@@ -5,7 +5,8 @@ import '../styles/Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <h2 className="footer-title">Dive Deeper</h2>
+      <div className='footer-title'>Dive Deeper</div>
+      {/* <h2 className="footer-title">Dive Deeper</h2> */}
       <div className="footer-links">
         <div className="link-column">
           <p className="column-title">Carbon Credits</p>
