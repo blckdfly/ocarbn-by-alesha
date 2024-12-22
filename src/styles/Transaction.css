@@ -28,9 +28,11 @@ h5{
   color: white;
 
 }
-  .container-transaction{
-    /* padding: 100px; */
-  }
+
+.container-transaction{
+    max-width: calc(100% - 100px); /* Sesuaikan dengan margin */
+    margin: 0 auto; /* Pastikan margin kiri dan kanan sama */
+}
 
   .row {
     width: 90%;
