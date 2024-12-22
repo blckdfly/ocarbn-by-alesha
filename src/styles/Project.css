@@ -19,17 +19,6 @@
   margin: 0 auto 2rem;
 }
 
-.explore-button {
-  background-color: #0066cc;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-bottom: 2rem;
-}
-
 .project-stats {
   display: flex;
   justify-content: center;
@@ -112,47 +101,134 @@
   margin-bottom: 30px;
 }
 
-.project-list {
+.project-detail-container {
+  color: white;
+  padding: 100px;
+  position: relative;
+}
+
+.project-list-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-around;
+  grid-template-columns: repeat(2, 1fr); /* 3 kolom tetap */
+  gap: 50px;
+}
+
+.project-card {
+  background-color: #1c1c1e;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  display: flex; /* Tambahkan ini untuk menyesuaikan tinggi child */
+  flex-direction: column; /* Elemen disusun vertikal */
+}
+
+.project-info {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px;
+  border-radius: 0; 
+  position: relative; /* Tambahkan ini */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Pastikan konten ada di atas */
+  z-index: 1; 
+  box-sizing: border-box; 
+  height: 100%;
+}
+
+
+.project-info h3 {
+  font-size: 48px;
+  margin-top: 5px;
+  margin-bottom: 10px; /* Spasi antar elemen */
+}
+
+.project-info h5 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.project-info p {
+  margin: 5px 0; /* Spasi antar paragraf */
+}
+
+.project-description {
+  text-align: justify;
+  margin-bottom: 15px; /* Spasi dengan tombol */
+  margin-bottom: 15px; /* Mengatur jarak bawah */
+  min-height: 120px;
+}
+
+.project-date {
+  display: flex;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px; /* Kasih padding biar gak mepet */
+
   gap: 20px;
 }
 
-.project-item {
-  width: 20%;
-  background-color: #000000;
-  padding: 20px;
-  width: 40vw;
-  border-radius: 10px;
+.project-date-left, .project-date-right {
+  display: flex;
+  flex-direction: column; /* Ngebuat h4 & h6 vertikal */
+  justify-content: center; /* Centering secara vertical */
+  align-items: center; /* Centering secara horizontal */
+  padding: 10px; 
 }
 
-.project-item img {
-  width: 100%;
-  border-radius: 10px;
+.project-date-left {
+  width: auto;
+  border-top-left-radius: 15px; /* Rounded kiri atas */
+  border-bottom-left-radius: 15px; /* Rounded kiri bawah */
+  background-color: #f0f0f0; /* Kasih warna background biar kelihatan */
 }
 
-.project-item h3 {
-  font-size: 20px;
-  margin: 10px 0;
+.project-date-right {
+  width: 80px; /* Bisa diatur sesuai kebutuhan */
+  border-top-right-radius: 15px; /* Rounded kanan atas */
+  border-bottom-right-radius: 15px; /* Rounded kanan bawah */
+  background-color: #f0f0f0; /* Kasih warna background biar kelihatan */
 }
 
-.project-item p {
-  color: #a9a9a9;
+
+.project-date h4, .project-date h6 {
+  color: black; /* Semua font jadi warna hitam */
+  margin: 0;
 }
 
-.project-item .date {
-  font-size: 14px;
-  color: #f1f1f1;
+.project-date h4 {
+  font-size: 20px; /* Ukuran font h4 jadi 20px */
+  margin-bottom: 10px; 
 }
 
-.project-item button {
-  background-color: #48cae4;
+.project-date h6 {
+  font-size: 10px; /* Ukuran font h6 jadi 10px */
+}
+
+.get-in-touch {
+  background-color: rgba(7, 14, 22, 1);
   color: white;
-  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  padding: 10px 15px;
   cursor: pointer;
+  border-radius: 5px;
+  position: absolute; /* Pake absolute supaya bisa diposisikan relatif ke parent */
+  bottom: 30px; /* Posisikan tombol di bawah */
+  right: 30px; /* Posisikan tombol di kanan */
+  width: fit-content;
+}
+
+
+.get-in-touch:hover {
+  background-color: #0056b3;
 }
 
 .articles-section {
@@ -232,7 +308,7 @@
 }
 
 .load-more {
-  background-color: #0066cc;
+  background-color: rgba(11, 22, 35, 1);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -241,6 +317,5 @@
   border-radius: 5px;
   margin-left: auto;
   margin-bottom: 2rem;
-  margin-right: 4rem;
   display: block;
 }
