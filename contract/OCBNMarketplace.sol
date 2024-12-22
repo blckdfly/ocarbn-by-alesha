@@ -5,7 +5,7 @@ import "contracts/OCBNToken.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
-contract BlueCarbonMarketplace is Ownable, ReentrancyGuard {
+contract Ocarbn is Ownable, ReentrancyGuard {
     struct Project {
         address owner;
         string name;
@@ -15,11 +15,11 @@ contract BlueCarbonMarketplace is Ownable, ReentrancyGuard {
         bool isVerified;
     }
 
-    BlueCarbonToken public token;
+    OCBNToken public token;
     mapping(uint256 => Project) public projects;
     uint256 public projectCount;
 
-    struct Retirement {
+    struct Credit {
         uint256 projectId;
         address retiree;
         string retireeName;
@@ -29,12 +29,11 @@ contract BlueCarbonMarketplace is Ownable, ReentrancyGuard {
         uint256 timestamp;
     }
 
-    mapping(uint256 => Retirement) public retirements;
-    uint256 public retirementCount;
+    mapping(uint256 => Credit) public credits;
+    uint256 public creditCount;
 
     event ProjectAdded(uint256 indexed projectId, address indexed owner, string name);
     event ProjectVerified(uint256 indexed projectId);
-    event CreditsPurchased(uint256 indexed projectId, address indexed buyer, uint256 amount);
     event CreditsRetired(
         uint256 indexed retirementId,
         uint256 indexed projectId,
@@ -46,11 +45,15 @@ contract BlueCarbonMarketplace is Ownable, ReentrancyGuard {
     );
 
     constructor(address tokenAddress) Ownable(msg.sender) {
-    token = BlueCarbonToken(tokenAddress);
-}
+        token = OCBNToken(tokenAddress);
+    }
 
-
-    function addProject(string memory _name, string memory _description, uint256 _availableCredits, uint256 _pricePerCredit) external {
+    function addProject(
+        string memory _name,
+        string memory _description,
+        uint256 _availableCredits,
+        uint256 _pricePerCredit
+    ) external {
         require(_availableCredits > 0, "Credits must be greater than zero");
         require(_pricePerCredit > 0, "Price must be greater than zero");
 
@@ -75,37 +78,26 @@ contract BlueCarbonMarketplace is Ownable, ReentrancyGuard {
         emit ProjectVerified(_projectId);
     }
 
-    function purchaseCredits(uint256 _projectId, uint256 _amount) external {
+    function retireCredits(
+        uint256 _projectId,
+        uint256 _amount,
+        string memory _retireeName,
+        string memory _message
+    ) external nonReentrant {
         require(_projectId <= projectCount, "Invalid project ID");
-        Project storage project = projects[_projectId];
-        require(project.isVerified, "Project is not verified");
-        require(project.availableCredits >= _amount, "Not enough credits available");
-
-        uint256 totalCost = project.pricePerCredit * _amount;
-        require(token.balanceOf(msg.sender) >= totalCost, "Insufficient balance");
-
-        // Transfer token from buyer to project owner
-        token.transferFrom(msg.sender, project.owner, totalCost);
-        project.availableCredits -= _amount;
-
-        emit CreditsPurchased(_projectId, msg.sender, _amount);
-    }
-
-    function retireCredits(uint256 _projectId, uint256 _amount, string memory _retireeName, string memory _message) external nonReentrant {
         Project storage project = projects[_projectId];
         require(project.isVerified, "Project is not verified");
         require(_amount > 0, "Amount must be greater than zero");
         require(project.availableCredits >= _amount, "Not enough credits available");
 
         uint256 totalCost = project.pricePerCredit * _amount;
-        require(token.balanceOf(msg.sender) >= totalCost, "Insufficient token balance");
 
-        // Transfer token from retiree to marketplace (symbolic for retirement)
-        token.transferFrom(msg.sender, address(this), totalCost);
+        _transferTokens(msg.sender, project.owner, totalCost);
+
         project.availableCredits -= _amount;
 
-        retirementCount++;
-        retirements[retirementCount] = Retirement({
+        creditCount++;
+        credits[creditCount] = Credit({
             projectId: _projectId,
             retiree: msg.sender,
             retireeName: _retireeName,
@@ -115,6 +107,12 @@ contract BlueCarbonMarketplace is Ownable, ReentrancyGuard {
             timestamp: block.timestamp
         });
 
-        emit CreditsRetired(retirementCount, _projectId, msg.sender, _retireeName, _message, _amount, totalCost);
+        emit CreditsRetired(creditCount, _projectId, msg.sender, _retireeName, _message, _amount, totalCost);
+    }
+
+    function _transferTokens(address from, address to, uint256 amount) internal {
+        require(token.balanceOf(from) >= amount, "Insufficient token balance");
+        require(token.allowance(from, address(this)) >= amount, "Allowance not set");
+        token.transferFrom(from, to, amount);
     }
 }
