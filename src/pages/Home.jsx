@@ -4,7 +4,8 @@ import '../styles/Partners.css';
 import { partners, industryLeaders } from '../constant/logoConstant';
 import { articleCover } from '../constant/articleConstant';
 import aboutImage from '../assets/about-home.png';
-import verraCertified from '../assets/verra.png'
+import verraCertified from '../assets/verra.png';
+import logo1 from '../assets/ocarbn-logo.png';
 
 const Articles = () => {
   return (
@@ -16,7 +17,7 @@ const Articles = () => {
             <a href={url} target="_blank" rel="noopener noreferrer">
               <img src={image} alt={title} />
             </a>
-            <p>{title}</p>
+            <p style={{ fontWeight: 'bold' }}>{title}</p>
             <p>{date}</p>
           </div>
         ))}
@@ -56,7 +57,10 @@ const Container = () => {
         ))}
       </div>
       <div className='certified'>
-        <h2>Certified by Verra, a Global Standard in Carbon Offsetting</h2>
+        <h2>
+          Certified by <span class="highlight">Verra</span>, a Global Standard in Carbon Offsetting
+        </h2>
+
         <div className='certiImage'> <img src={verraCertified} alt="Verra Certified" /> </div>
         <p>Every blue carbon credit on our platform is certified by Verra, the global 
           authority in carbon standards. Backed by the most rigorous verification process, 
@@ -67,6 +71,9 @@ const Container = () => {
       <div className="divider2"></div>
       <Articles />
       <div className="divider2"></div>
+      <div className='logo1'>
+        <img src={logo1} alt="Ocarbn Logo" />
+      </div>
     </div>
   );
 };
