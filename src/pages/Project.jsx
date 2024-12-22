@@ -3,28 +3,78 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/Project.css';
 import earthShape from '../assets/Earth.png';
 import { articleCover } from '../constant/articleConstant';
-import { community, projects } from '../constant/projectConstant';
+import { community } from '../constant/projectConstant';
+import projects from '../constant/projectData';
 
 // asli
 const ProjectList = () => {
+  const navigate = useNavigate(); // Buat navigasi
+
   return (
     <div className="project-container">
+      <div className="gradient-circle"></div>
       <div className="featured-projects">
         <h2>Reinvent Conservation with Us</h2>
         <p className="intro-text">
           Join us in transforming the future of marine conservation. Through innovative blue carbon solutions and blockchain technology, we're creating a transparent marketplace that empowers global collaboration to protect ocean ecosystems and drive sustainable change.
         </p>
+
+        {/* =================
         <div className="project-list">
           {Object.entries(projects).map(([key, project]) => (
-            <div key={key} className="project-item">
+            <div key={project.id} className="project-item">
               <img src={project.img} alt={project.title} />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <p className="date">{project.date}</p>
-              <button>Get in Touch</button>
+
+              <button
+                className="get-in-touch"
+                onClick={() => navigate(`/detail-conservation/${project.id}`)}
+              >
+                Get in Touch
+              </button>
             </div>
           ))}
         </div>
+        =========== */}
+
+<div className="project-list-section">
+  {projects.map((project) => (
+    <div
+      key={project.id}
+      className="project-card"
+      style={{ backgroundImage: `url(${project.img})` }}
+    >
+      <div className="project-info">
+        <h3>{project.name}</h3>
+        <h5>{project.type}</h5>
+        
+        <p className="project-description">{project.description}</p>
+
+        <div className="project-date">
+          <div className='project-date-left'>
+            <h4>{project.date} tCO₂</h4> 
+            <h6>Annual removal capacity</h6>
+          </div>
+          <div className='project-date-right'>
+            <h4>{project.year}</h4>
+            <h6>scheduled</h6>
+          </div>
+
+
+        </div>
+
+        <button
+          className="get-in-touch"
+          onClick={() => navigate(`/detail-conservation/${project.id}`)}
+        >
+          Get in Touch
+        </button>
+      </div>
+    </div>
+  ))}
+</div>
       </div>
     </div>
   );
@@ -40,7 +90,7 @@ const Articles = () => {
             <a href={url} target="_blank" rel="noopener noreferrer">
               <img src={image} alt={title} />
             </a>
-            <p>{title}</p>
+            <p style={{ fontWeight: 'bold' }}>{title}</p>
             <p>{date}</p>
           </div>
         ))}
@@ -55,13 +105,6 @@ const Container = () => {
   return (
     <div className='container-project'>
       <ProjectList />
-      {/* <button
-      className="load-more"
-      onClick={() => window.open('/project-detail', '_blank')}
-      >
-       
-      Explore Project
-      </button> */}
 
       <button
         className="load-more"
@@ -72,7 +115,6 @@ const Container = () => {
 
       <div className="divider2"></div>
       <Articles />
-      <div className="divider2"></div>
     </div>
   );
 };
