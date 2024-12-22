@@ -94,6 +94,9 @@
   color: #f0f8ff;/* Add space between the two sections */
 }
 
+h2 .highlight {
+  color: rgba(0, 246, 255, 1); /* Warna khusus untuk kata Verra */
+}
 
 .partner h1 {
   color: #ffffff;
@@ -110,12 +113,15 @@
 .certified h2 {
   color: #ffffff;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .certified p {
   color: #f0f8ff;
   text-align: center;
   padding: 20px;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .certiImage {
@@ -123,6 +129,7 @@
   justify-content: center; /* Centers the image horizontally */
   align-items: center; /* Centers the image vertically */
   margin: 20px 0; /* Optional: Add margin for spacing */
+  margin-bottom: 80px;
 }
 
 .certiImage img {
@@ -143,6 +150,7 @@
   justify-content: space-between; /* Adds space between text and image */
   margin: 20px 0; /* Adjust margin as needed */
   margin-bottom: 6rem;
+  gap: 50px;
 }
 
 .aboutContent {
@@ -246,3 +254,16 @@
   transform: translateX(-50%);
   z-index: -1; 
 }
+
+.logo1 {
+  text-align: center; /* Atur konten di dalam div menjadi center */
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.logo1 img {
+  display: inline-block; /* Untuk memastikan gambar mengikuti alignment */
+  max-width: 100%; /* Supaya responsif */
+  height: auto; /* Pertahankan aspect ratio */
+}
+
