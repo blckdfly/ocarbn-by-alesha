@@ -1,10 +1,5 @@
-/* General Styling */
-body {
-  margin: 0;
-}
 
 footer {
-  color: #ffffff;
   padding: 40px 20px;
   font-size: 14px;
 }
@@ -15,6 +10,15 @@ footer {
   text-align: left; /* Pastikan judul footer rata kiri */
   margin-bottom: 30px;
   margin-left: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid rgba(0, 246, 255, 1);
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left; /* Rata kiri untuk bagian bawah footer */
 }
 
 .footer-links {
@@ -52,20 +56,18 @@ footer {
 
 .link-column a {
   text-decoration: none;
-  color: #a8a8a8;
   transition: color 0.3s ease;
   display: inline-block;
 }
 
 .link-column a:hover {
-  color: #ffffff;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 3px solid #333333;
+  border-top: 3px solid rgba(0, 246, 255, 1);
   padding-top: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -75,7 +77,6 @@ footer {
 .footer-copyright {
   margin: 0;
   font-size: 12px;
-  color: #a8a8a8;
 }
 
 /* Responsive Design */
