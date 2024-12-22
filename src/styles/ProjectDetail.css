@@ -1,90 +1,142 @@
 .project-detail-container {
-    background-color: #121212;
     color: white;
     padding: 100px;
+    position: relative;
   }
   
   .project-list-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom tetap */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 3 kolom tetap */
+    gap: 50px;
   }
   
   .project-card {
     background-color: #1c1c1e;
-    border-radius: 8px;
-    padding: 15px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
     overflow: hidden;
-    text-align: left;
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: auto; /* Menjaga rasio gambar */
-    object-fit: cover; /* Memastikan gambar tetap rapi */
-    border-radius: 8px;
+    position: relative;
+    height: 400px;
+    display: flex; /* Tambahkan ini untuk menyesuaikan tinggi child */
+    flex-direction: column; /* Elemen disusun vertikal */
   }
   
   .project-info {
-    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    border-radius: 0; 
+    position: relative; /* Tambahkan ini */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Pastikan konten ada di atas */
+    z-index: 1; 
+    box-sizing: border-box; 
+    height: 100%;
   }
   
+  
   .project-info h3 {
-    font-size: 1.5em;
-    color: #fff;
+    font-size: 48px;
+    margin-top: 5px;
+    margin-bottom: 10px; /* Spasi antar elemen */
+  }
+
+  .project-info h5 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  
+  .project-info p {
+    margin: 5px 0; /* Spasi antar paragraf */
+  }
+  
+  .project-description {
+    text-align: justify;
+    margin-bottom: 15px; /* Spasi dengan tombol */
+    margin-bottom: 15px; /* Mengatur jarak bawah */
+    min-height: 120px;
   }
   
   .project-date {
     display: flex;
-    justify-content: space-between;
     font-weight: bold;
-    margin: 10px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px; /* Kasih padding biar gak mepet */
+
+    gap: 20px;
+  }
+  
+  .project-date-left, .project-date-right {
+    display: flex;
+    flex-direction: column; /* Ngebuat h4 & h6 vertikal */
+    justify-content: center; /* Centering secara vertical */
+    align-items: center; /* Centering secara horizontal */
+    padding: 10px; 
+  }
+  
+  .project-date-left {
+    width: auto;
+    border-top-left-radius: 15px; /* Rounded kiri atas */
+    border-bottom-left-radius: 15px; /* Rounded kiri bawah */
+    background-color: #f0f0f0; /* Kasih warna background biar kelihatan */
+  }
+  
+  .project-date-right {
+    width: 80px; /* Bisa diatur sesuai kebutuhan */
+    border-top-right-radius: 15px; /* Rounded kanan atas */
+    border-bottom-right-radius: 15px; /* Rounded kanan bawah */
+    background-color: #f0f0f0; /* Kasih warna background biar kelihatan */
+  }
+  
+  
+  .project-date h4, .project-date h6 {
+    color: black; /* Semua font jadi warna hitam */
+    margin: 0;
+  }
+  
+  .project-date h4 {
+    font-size: 20px; /* Ukuran font h4 jadi 20px */
+    margin-bottom: 10px; 
+  }
+  
+  .project-date h6 {
+    font-size: 10px; /* Ukuran font h6 jadi 10px */
   }
 
-  .project-description {
-    text-align: justify;
-    min-height: 150px;
-  }  
-  
   .get-in-touch {
-    background-color: #00bcd4;
-    color: #121212;
+    background-color: rgba(7, 14, 22, 1);
+    color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
-
-    margin-top: auto;
+    position: absolute; /* Pake absolute supaya bisa diposisikan relatif ke parent */
+    bottom: 30px; /* Posisikan tombol di bawah */
+    right: 30px; /* Posisikan tombol di kanan */
+    width: fit-content;
   }
-
+  
+  
   .get-in-touch:hover {
     background-color: #0056b3;
   }
   
-  .footer-section {
-    margin-top: 40px;
-    padding: 20px 0;
-    border-top: 1px solid #333;
-  }
-  
-  .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-  }
-  
-  .footer-grid h3 {
-    font-weight: bold;
-    color: #00bcd4;
-  }
-  
-  .footer-grid p {
-    margin: 5px 0;
-  }
-  
-  .gradient-circle {
-    width: 900px; 
-    height: 900px;
+
+
+/* ========== */
+
+.gradient-circle {
+    /* width: 900px; 
+    height: 900px; */
+    width: 200vw; /* 2x lebar viewport */
+    height: 200vh;
     background: radial-gradient(circle, rgba(0, 61, 109, 0.5), rgba(0, 61, 109, 0.1));
     border-radius: 50%;
     filter: blur(100px); 
