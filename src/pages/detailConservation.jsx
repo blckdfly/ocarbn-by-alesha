@@ -22,14 +22,22 @@ function DetailConservation() {
       </div>
 
       <div className='parent'>
-        <div className='child child-left'>
+        <div className='child-left'>
           <img src={project.img} alt={project.name} />
 
-          <div className='project-name'>
-            {project.name}
+          <div className='name-and-type'>
+            <div className='project-name'>
+              {project.name}
+            </div>
+            <div className='project-type'>
+                {project.type}
+            </div>
           </div>
 
+          
+
           <div className='project-long-desc'>
+            <br />
             {project.longDesc1}
             <br />
             <br />
@@ -37,11 +45,14 @@ function DetailConservation() {
           </div>
         </div>
         
-        <div className='child child-right'>
+        <div className='child-right'>
         
-          <div className='map'>
-            <img src={project.map} alt="Project Map" />
-          </div>
+          <iframe className='gmaps'
+            src={project.gmaps} 
+            allowFullScreen
+            loading="lazy"
+          >
+          </iframe>
 
           <div className='detail-info'>
             <div className='left'>
