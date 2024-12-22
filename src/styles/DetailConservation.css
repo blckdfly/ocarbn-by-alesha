@@ -1,140 +1,155 @@
+.gradient-circle {
+  width: 900px; 
+  height: 900px;
+  background: radial-gradient(circle, rgba(0, 61, 109, 0.5), rgba(0, 61, 109, 0.1));
+  border-radius: 50%;
+  filter: blur(100px); 
+  position: absolute; 
+  top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1; 
+}
+
 *{
   color: white;
 }
-
-p {
-    color: white;
-  }
  
-  .detail-conservation-header img {
-    width: 100%; /* Menyesuaikan lebar gambar dengan lebar elemen kontainer */
-    max-width: 90rem; /* Batas maksimum ukuran gambar */
-    height: auto; /* Menjaga rasio aspek gambar */
-    display: block;
-    margin: 0 auto; /* Agar gambar berada di tengah */
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+.detail-conservation-header img {
 
-    width: 1318px;
-    height: 393px;
-  }
+  width: 100%; /* Menyesuaikan lebar gambar dengan lebar elemen kontainer */
+  max-width: 90rem; /* Batas maksimum ukuran gambar */
+  height: auto; /* Menjaga rasio aspek gambar */
+  display: block;
+  margin: 0 auto; /* Agar gambar berada di tengah */
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
 
-  h1{
-    color: white;
-  }
+.parent {
+  display: grid; /* Aktifkan grid */
+  grid-template-columns: 3fr 2fr; 
+  gap: 40px;
+  max-width: calc(100% - 100px); /* Sesuaikan dengan margin */
+  margin: 0 auto; /* Pastikan margin kiri dan kanan sama */
+}
 
-  .parent {
-    display: grid; /* Aktifkan grid */
-    grid-template-columns: 3fr 2fr; /* Rasio 3:2 */
-    width: 100%; /* Atur lebar parent sesuai kebutuhan */
-  }
-  
-  .child-left {
-    flex: 3;  /* Opsional: warna untuk ngecek layout */
-  }
-  
-  .child-right {
-    flex: 2; /* 2 bagian dari total 5 */
-    display: flex; /* Bisa flex kalau mau manage lebih gampang */
-    flex-direction: column; /* Supaya stack vertikal (atas-bawah) */
-    gap: 20px; /* Jarak antar child (detail-info & stat) */
-  }
 
-  .map img {
-    width: 100%; /* Gambar akan memenuhi lebar kontainer */
-    max-width: 500px; /* Batasi lebar gambar maksimal */
-    height: auto; /* Pastikan proporsi gambar tetap */
-    border-radius: 8px; /* Tambahkan sudut melengkung jika diinginkan */
-  }
-  
-  .child-left img {
-    width: 100%; /* Biar gambar di div kiri nge-scale otomatis */
-    height: auto; /* Biar proporsi gambar tetap */
-    object-fit: cover; /* Atur cara gambar ngefit ke div */
+.child-left, .child-right {
+  max-width: 100%; /* Membatasi ukuran elemen anak */
+}
 
-    width: 740px; /* Biar gambar di div kiri nge-scale otomatis */
-    height: 307px;
-  }
 
-  .project-name{
-    font-size: 64px;
-  }
-  .project-long-desc{
-    text-align: justify;
-  }
+.child-left {
+  flex: 3;  /* Opsional: warna untuk ngecek layout */
+}
 
-  .detail-info {
-    display: flex; /* Aktifin flexbox */
-    justify-content: space-between; /* Bagi space antara left & right */
-    gap: 20px; /* Tambahin jarak antar bagian */
-  }
-  
-  .detail-info .left,
-  .detail-info .right {
-    flex: 1; /* Bagi space sama rata */
-  }
-  
-  h5 {
-    margin-bottom: 8px; /* Jarak antar judul kecil */
-    font-size: 18px; /* Adjust ukuran h5 */
-  }
-  
-  h4 {
-    margin-bottom: 16px; /* Spasi antar elemen h4 */
-    font-size: 26px;
-  }
-  
-  .stat {
-    margin-top: 20px; /* Kalau mau kasih spesifik jarak tambahan */
-  }
+.child-right {
+  flex: 2; /* 2 bagian dari total 5 */
+  display: flex; /* Bisa flex kalau mau manage lebih gampang */
+  flex-direction: column; /* Supaya stack vertikal (atas-bawah) */
+  gap: 20px; /* Jarak antar child (detail-info & stat) */
+}
 
-  .btn {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    padding: 12px 24px;
-    color: white;
-    background-color: #007BFF; /* Warna biru primer */
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-decoration: none;
-  }
+
+
+
+.child-left img {
+  object-fit: cover;
+  width: 740px;
+  height: 307px;
+  display: block;
+  margin: 0 auto;
+}
+
+.name-and-type {
+  display: flex;
+  justify-content: space-between;  /* Membuat elemen berada di kiri dan kanan */
+  align-items: center;  /* Vertikal alignment, jika diperlukan */
+}
+
+.project-name{
+  font-size: 64px;
+}
+.project-long-desc{
+  text-align: justify;
+
+}
+
+.detail-info {
+  display: flex; /* Aktifin flexbox */
+  justify-content: space-between; /* Bagi space antara left & right */
+  gap: 20px; /* Tambahin jarak antar bagian */
+}
+
+.detail-info .left,
+.detail-info .right {
+  flex: 1; /* Bagi space sama rata */
+}
+
+.gmaps{
+  width: 538px;
+  height: 415px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-info, .stat{
+  background-color: rgba(11, 22, 35, 1);
+  border-radius: 20px;
+}
+
+h5 {
+  margin-bottom: 8px; /* Jarak antar judul kecil */
+  font-size: 18px; /* Adjust ukuran h5 */
+}
+
+h4 {
+  margin-bottom: 16px; /* Spasi antar elemen h4 */
+  font-size: 26px;
+}
+
+.stat {
+  margin-top: 20px; /* Kalau mau kasih spesifik jarak tambahan */
+}
+
+.btn {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 24px;
+  color: white;
+  background-color: #007BFF; /* Warna biru primer */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Warna biru yang lebih gelap untuk hover */
+  transform: scale(1.05); /* Sedikit zoom saat dihover */
+}
+
+.btn:active {
+  background-color: #003f7f; /* Warna biru yang lebih gelap lagi saat klik */
+  transform: scale(0.95); /* Efek mengecil saat klik */
+}
+
+.btn-primary {
+  background-color: #003D6D; /* Warna hijau untuk tombol spesifik */
+}
+
+.btn-primary:hover {
+  background-color: #005B9F; /* Hijau lebih gelap saat hover */
+}
+
+.transaction-button {
+  margin-top: 20px;
+  text-align: center; /* Posisikan tombol di tengah */
+}
   
-  .btn:hover {
-    background-color: #0056b3; /* Warna biru yang lebih gelap untuk hover */
-    transform: scale(1.05); /* Sedikit zoom saat dihover */
-  }
   
-  .btn:active {
-    background-color: #003f7f; /* Warna biru yang lebih gelap lagi saat klik */
-    transform: scale(0.95); /* Efek mengecil saat klik */
-  }
-  
-  .btn-primary {
-    background-color: #003D6D; /* Warna hijau untuk tombol spesifik */
-  }
-  
-  .btn-primary:hover {
-    background-color: #003D6D; /* Hijau lebih gelap saat hover */
-  }
-  
-  .transaction-button {
-    margin-top: 20px;
-    text-align: center; /* Posisikan tombol di tengah */
-  }
-  
-  .gradient-circle {
-    width: 900px; 
-    height: 900px;
-    background: radial-gradient(circle, rgba(0, 61, 109, 0.5), rgba(0, 61, 109, 0.1));
-    border-radius: 50%;
-    filter: blur(100px); 
-    position: absolute; 
-    top: -300px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1; 
-  }
