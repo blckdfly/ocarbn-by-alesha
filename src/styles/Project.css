@@ -1,13 +1,15 @@
-/* Add this to your Project.css file */
-
 .hero-section {
   text-align: center;
   padding: 2rem;
 }
+.hero-section-3{
+  margin-top: 50px;
+}
 
 .hero-section h1 {
   font-size: 2.5rem;
-  color: #ffffff; /* Dark blue color */
+  color: #ffffff;
+  /* Dark blue color */
   margin-top: 10rem;
   margin-bottom: 1rem;
 }
@@ -32,22 +34,29 @@
   flex: 1;
   min-width: 150px;
   max-width: 200px;
-  background-color: white;
+  background-color: rgba(11, 22, 35, 1);;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+  position: relative;
+  height: 150px;
 
-.stat-item h2 {
-  font-size: 1.5rem;
-  color: #003366;
-  margin-bottom: 0.5rem;
 }
 
 .stat-item p {
-  font-size: 0.9rem;
-  color: #666;
-  margin: 0;
+  font-size: 20px;
+  color: rgba(148, 148, 148, 1);
+  position: absolute; /* Agar elemen ini bisa diposisikan */
+  top: 10px; /* Posisikan di kiri atas */
+  left: 10px; /* Posisikan di kiri atas */
+}
+
+.stat-item h2 {
+  font-size: 64px;
+  color: rgba(0, 246, 255, 1);
+  position: absolute; /* Agar elemen ini bisa diposisikan */
+  bottom: 10px; /* Posisikan di kanan bawah */
+  right: 10px; /* Posisikan di kanan bawah */
 }
 
 /* Responsive design */
@@ -67,7 +76,10 @@
   padding: 50px 20px;
   text-align: center;
 }
-
+.community-section h2{
+  font-size: 48px;
+  margin-bottom:100px;
+}
 .community-grid {
   display: flex;
   justify-content: center;
@@ -75,29 +87,60 @@
 }
 
 .community-item {
-  width: 30%;
-  background-color: #1e2a38;
-  padding: 20px;
-  border-radius: 10px;
+  background-size: cover; /* Membuat gambar menutupi seluruh div */
+  background-position: center; /* Posisi gambar agar selalu berada di tengah */
+  width: 343px;
+  height: 375px; /* Sesuaikan dengan kebutuhan */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Menempatkan konten (h3 & p) di bagian bawah */
+  padding: 10px;
+  color: white; /* Agar teks terlihat di atas gambar */
+  border-radius: 8px; /* Optional, jika ingin sudut melengkung */
 }
 
-.community-item img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+.community-item-text{
+  background-color: rgba(7, 14, 22, 1);
+  width: 292px;
+  height: 186px;
+  border-radius: 30px;
+  margin: 0 auto;
 }
 
-.community-item h3 {
+.community-item-text h3,
+.community-item-text p {
+  margin: 0;
+}
+
+.community-item-text h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin: 20px 10px 25px 25px;
+
+}
+
+.community-item-text p {
+  font-size: 14px;
+  color: rgba(182, 182, 182, 1);
+  margin: 0 auto;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.reinvent h2{
+  font-size: 48px;
+
+}
+
+.reinvent p{
   font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.featured-projects {
-  padding: 50px 20px;
+  text-align: center;
 }
 
 .featured-projects h2 {
   text-align: center;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -109,7 +152,8 @@
 
 .project-list-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 kolom tetap */
+  grid-template-columns: repeat(2, 1fr);
+  /* 3 kolom tetap */
   gap: 50px;
 }
 
@@ -121,25 +165,29 @@
   overflow: hidden;
   position: relative;
   height: 400px;
-  display: flex; /* Tambahkan ini untuk menyesuaikan tinggi child */
-  flex-direction: column; /* Elemen disusun vertikal */
+  display: flex;
+  /* Tambahkan ini untuk menyesuaikan tinggi child */
+  flex-direction: column;
+  /* Elemen disusun vertikal */
 }
 
 .project-info {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 15px;
-  border-radius: 0; 
-  position: relative; /* Tambahkan ini */
+  border-radius: 0;
+  position: relative;
+  /* Tambahkan ini */
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; 
+  bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Pastikan konten ada di atas */
-  z-index: 1; 
-  box-sizing: border-box; 
+  justify-content: flex-start;
+  /* Pastikan konten ada di atas */
+  z-index: 1;
+  box-sizing: border-box;
   height: 100%;
 }
 
@@ -147,7 +195,8 @@
 .project-info h3 {
   font-size: 48px;
   margin-top: 5px;
-  margin-bottom: 10px; /* Spasi antar elemen */
+  margin-bottom: 10px;
+  /* Spasi antar elemen */
 }
 
 .project-info h5 {
@@ -156,13 +205,16 @@
 }
 
 .project-info p {
-  margin: 5px 0; /* Spasi antar paragraf */
+  margin: 5px 0;
+  /* Spasi antar paragraf */
 }
 
 .project-description {
   text-align: justify;
-  margin-bottom: 15px; /* Spasi dengan tombol */
-  margin-bottom: 15px; /* Mengatur jarak bawah */
+  margin-bottom: 15px;
+  /* Spasi dengan tombol */
+  margin-bottom: 15px;
+  /* Mengatur jarak bawah */
   min-height: 120px;
 }
 
@@ -171,46 +223,62 @@
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 15px;
-  padding: 10px; /* Kasih padding biar gak mepet */
+  padding: 10px;
+  /* Kasih padding biar gak mepet */
 
   gap: 20px;
 }
 
-.project-date-left, .project-date-right {
+.project-date-left,
+.project-date-right {
   display: flex;
-  flex-direction: column; /* Ngebuat h4 & h6 vertikal */
-  justify-content: center; /* Centering secara vertical */
-  align-items: center; /* Centering secara horizontal */
-  padding: 10px; 
+  flex-direction: column;
+  /* Ngebuat h4 & h6 vertikal */
+  justify-content: center;
+  /* Centering secara vertical */
+  align-items: center;
+  /* Centering secara horizontal */
+  padding: 10px;
 }
 
 .project-date-left {
   width: auto;
-  border-top-left-radius: 15px; /* Rounded kiri atas */
-  border-bottom-left-radius: 15px; /* Rounded kiri bawah */
-  background-color: #f0f0f0; /* Kasih warna background biar kelihatan */
+  border-top-left-radius: 15px;
+  /* Rounded kiri atas */
+  border-bottom-left-radius: 15px;
+  /* Rounded kiri bawah */
+  background-color: #f0f0f0;
+  /* Kasih warna background biar kelihatan */
 }
 
 .project-date-right {
-  width: 80px; /* Bisa diatur sesuai kebutuhan */
-  border-top-right-radius: 15px; /* Rounded kanan atas */
-  border-bottom-right-radius: 15px; /* Rounded kanan bawah */
-  background-color: #f0f0f0; /* Kasih warna background biar kelihatan */
+  width: 80px;
+  /* Bisa diatur sesuai kebutuhan */
+  border-top-right-radius: 15px;
+  /* Rounded kanan atas */
+  border-bottom-right-radius: 15px;
+  /* Rounded kanan bawah */
+  background-color: #f0f0f0;
+  /* Kasih warna background biar kelihatan */
 }
 
 
-.project-date h4, .project-date h6 {
-  color: black; /* Semua font jadi warna hitam */
+.project-date h4,
+.project-date h6 {
+  color: black;
+  /* Semua font jadi warna hitam */
   margin: 0;
 }
 
 .project-date h4 {
-  font-size: 20px; /* Ukuran font h4 jadi 20px */
-  margin-bottom: 10px; 
+  font-size: 20px;
+  /* Ukuran font h4 jadi 20px */
+  margin-bottom: 10px;
 }
 
 .project-date h6 {
-  font-size: 10px; /* Ukuran font h6 jadi 10px */
+  font-size: 10px;
+  /* Ukuran font h6 jadi 10px */
 }
 
 .get-in-touch {
@@ -220,9 +288,12 @@
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
-  position: absolute; /* Pake absolute supaya bisa diposisikan relatif ke parent */
-  bottom: 30px; /* Posisikan tombol di bawah */
-  right: 30px; /* Posisikan tombol di kanan */
+  position: absolute;
+  /* Pake absolute supaya bisa diposisikan relatif ke parent */
+  bottom: 30px;
+  /* Posisikan tombol di bawah */
+  right: 30px;
+  /* Posisikan tombol di kanan */
   width: fit-content;
 }
 
@@ -289,10 +360,26 @@
   color: white;
 }
 
+.image-container {
+  display: flex;
+  justify-content: space-between; /* Memberikan jarak yang sama antar gambar */
+  gap: 10px; /* Jarak antar gambar bisa diatur sesuai kebutuhan */
+  padding: 20px;
+}
+
+.image-container img {
+  height: 60px; /* Set height gambar menjadi 50px */
+  width: auto; /* Width otomatis menyesuaikan rasio gambar */
+}
+
+
 .earth-shape {
-  width: 1200px; /* Adjust the width as per your requirement */
-  height: auto; /* Maintains the aspect ratio */
-  margin: 20px auto; /* Centers the image horizontally */
+  width: 1200px;
+  /* Adjust the width as per your requirement */
+  height: auto;
+  /* Maintains the aspect ratio */
+  margin: 20px auto;
+  /* Centers the image horizontally */
   display: block;
 }
 
@@ -300,14 +387,33 @@
   background-color: #070E16;
   color: #ffffff;
   padding: 50px 20px;
-  border-top-left-radius: 50px; /* Rounded top corners */
-  border-top-right-radius: 50px; /* Rounded top corners */
-  width: 100vw; /* Full width of the viewport */
-  margin-left: calc(-50vw + 50%); /* Centering the full-width container */
+  border-top-left-radius: 50px;
+  /* Rounded top corners */
+  border-top-right-radius: 50px;
+  /* Rounded top corners */
+  width: 100vw;
+  /* Full width of the viewport */
+  margin-left: calc(-50vw + 50%);
+  /* Centering the full-width container */
   box-sizing: border-box;
 }
 
-.load-more {
+.load-more-1 {
+  background-color:black;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+  display: block;
+  border: 10px;
+}
+
+.load-more-2 {
   background-color: rgba(11, 22, 35, 1);
   color: white;
   border: none;
@@ -315,6 +421,7 @@
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
+  margin-top: 100px;
   margin-left: auto;
   margin-bottom: 2rem;
   display: block;
