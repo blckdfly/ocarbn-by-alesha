@@ -1,16 +1,8 @@
 # ocarbn - Blockchain-based Blue Carbon Marketplace
 
-![Project Status](https://img.shields.io/badge/status-under%20development-yellow)
-
 ## Overview
 
 ocarbn is a [React](https://reactjs.org/)-based web application aimed at powering the future of Blue Carbon investments through a blockchain-based marketplace platform. Our mission is to protect marine ecosystems for a resilient planet by leveraging cutting-edge blockchain technology for transparent and secure transactions.
-
-## Project Status
-
-⚠️ **This project is currently under active development** ⚠️
-
-Many features are still being implemented, and the application structure may change significantly. We appreciate your patience and interest in our project.
 
 ## Features (Planned)
 
