@@ -4,7 +4,7 @@
 
 ocarbn is a [React](https://reactjs.org/)-based web application aimed at powering the future of Blue Carbon investments through a blockchain-based marketplace platform. Our mission is to protect marine ecosystems for a resilient planet by leveraging cutting-edge blockchain technology for transparent and secure transactions.
 
-## Features (Planned)
+## Features
 
 - Home page showcasing our mission
 - Project listing and details
@@ -19,11 +19,12 @@ ocarbn is a [React](https://reactjs.org/)-based web application aimed at powerin
 - Frontend: [React JS](https://reactjs.org/)
 - Blockchain Network: [Base](https://www.base.org/)
 - Smart Contracts: [Solidity](https://soliditylang.org/)
-- Token: [OCBT](https://basescan.org/token/0x8F273b2d1791FAad981aA723D8a4D814513A5fAc)
+- Token: [OCBT](https://basescan.org/token/0x30effc43dd4e2f25f5cade3281160cb0d2cc0f18)
+- Contract: [Address](https://basescan.org/address/0xa91c01a629a5cd471343e38a9bac032a2f407ba7)
 
 ## Getting Started
 
-If you'd like to try the project in its current state, follow these steps:
+If you'd like to try this project, follow these steps:
 
 1. Clone the repository:
    ```bash
