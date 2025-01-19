@@ -14,13 +14,14 @@ ocarbn is a [React](https://reactjs.org/)-based web application aimed at powerin
 - Smart contracts for secure and transparent carbon credit trading
 - Decentralized finance (DeFi) integration for blue carbon investments
 
-## Technology Stack
+## Key Components
 
 - Frontend: [React JS](https://reactjs.org/)
 - Blockchain Network: [Base](https://www.base.org/)
 - Smart Contracts: [Solidity](https://soliditylang.org/)
 - Token: [OCBT](https://basescan.org/token/0x30effc43dd4e2f25f5cade3281160cb0d2cc0f18)
 - Contract: [Address](https://basescan.org/address/0xa91c01a629a5cd471343e38a9bac032a2f407ba7)
+- User Interface: [Figma](https://www.figma.com/design/BuFF5A740B1nzQLXB6Yexg/Ocarbn---Group-2?node-id=0-1&t=uwsNltiPtCOVa1x8-1)
 
 ## Getting Started
 
