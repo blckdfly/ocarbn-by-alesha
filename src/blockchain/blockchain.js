@@ -1,7 +1,7 @@
 import { ethers } from "ethers";
 import abi from './BlueCarbonMarketplace.json';
 
-const contractAddress = "0x8788CA0209e3f4952571D47Cd055bb76d6aB618c";
+const contractAddress = "0xa91c01a629a5cd471343e38a9bac032a2f407ba7";
 
 export const getContract = async () => {
     if (!window.ethereum) {
