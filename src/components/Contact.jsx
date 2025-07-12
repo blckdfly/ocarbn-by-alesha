@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import linkedinLogo from "../assets/linkedin-logo.png"; // Import the LinkedIn logo
+import linkedinLogo from "../assets/linkedin-logo.png";
 
 const Contact = () => {
   const formRef = useRef();

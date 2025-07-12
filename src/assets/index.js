@@ -24,6 +24,7 @@ import cprog from './tech/cprog.png';
 import java from './tech/java.png';
 import rust from './tech/rust.png';
 import solidity from './tech/solidity.png';
+import python from './tech/python.png';
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
@@ -33,6 +34,7 @@ import tesla from './company/tesla.png';
 import intelligo from './company/intelligo.jpeg';
 import portal from './company/portal.jpg';
 import RRI from './company/RRI.jpg';
+import idemia from './company/Idemia.png'
 
 import carrent from './carrent.png';
 import jobit from './jobit.png';
@@ -42,6 +44,10 @@ import showcasefe from './showcasefe.png';
 import LaravelAPI from './LaravelAPI.png';
 import spk_saw from './spk_saw.png';
 import macera from './macera.png';
+import seallt from './seallt.jpeg';
+import ocarbn from './ocarbn.png';
+import aurora from './Auroraa.png';
+
 
 import article1 from './Article/article1.png'
 import article2 from './Article/article2.png'
@@ -90,4 +96,9 @@ export {
   solidity,
   article2,
   article3,
+  python,
+  seallt,
+  ocarbn,
+  idemia,
+  aurora
 };

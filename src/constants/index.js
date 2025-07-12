@@ -29,7 +29,12 @@ import {
   rust,
   solidity,
   article2,
-  article3
+  article3,
+  python,
+  seallt,
+  ocarbn,
+  idemia,
+  aurora,
 } from '../assets';
 
 export const navLinks = [
@@ -49,11 +54,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'BLOCKCHAIN',
+    title: 'Blockchain',
     icon: web,
   },
   {
-    title: 'CYBER SECURITY',
+    title: 'Cyber Security',
     icon: backend,
   },
   // {
@@ -63,14 +68,6 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: 'HTML 5',
-    icon: html,
-  },
-  {
-    name: 'CSS 3',
-    icon: css,
-  },
   {
     name: 'JavaScript',
     icon: javascript,
@@ -99,6 +96,10 @@ const technologies = [
     name: 'Solidity',
     icon: solidity,
   },
+  {
+    name: 'Python',
+    icon: python,
+  },
 ];
 
 const experiences = [
@@ -107,12 +108,12 @@ const experiences = [
     company_name: 'Cyber Security Community',
     icon: intelligo,
     iconBg: '#fff',
-    date: 'February 2024 - Present',
+    date: 'February 2024 - Feb 2025',
     points: [
-      'Planning and overseeing activities of each subdivision',
-      'Ensuring quality and deadlines are met',
-      'Liaising with other division coordinators',
-      'Ensuring subdivisions work within their focus areas',
+      'Planning and overseeing activities of each subdivision.',
+      'Ensuring quality and deadlines are met.',
+      'Liaising with other division coordinators.',
+      'Ensuring subdivisions work within their focus areas.',
     ],
   },
   {
@@ -123,9 +124,22 @@ const experiences = [
     date: 'May 2024 - Present',
     points: [
       'initiated the establishment of this organization.',
-      'Manage educational activities such as seminars and hackathons',
-      'Collaborate with industry partners and other organizations',
+      'Manage educational activities such as seminars and hackathons.',
+      'Collaborate with industry partners and other organizations.',
       'Aim to expand influence while equipping students with in-depth knowledge of blockchain innovations.',
+    ],
+  },
+  {
+    title: 'Software Engineer Intern',
+    company_name: 'Idemia Labs Indonesia',
+    icon: idemia,
+    iconBg: '#fff',
+    date: 'Feb 2025 - Present',
+    points: [
+      'Participate in testing tools to ensure functionality and reliability.',
+      'Contribute to development and performance improvement.',
+      'Oversee inventory management and administrative processes effectively.',
+      'Play an active role in optimizing tools to improve overall operations.',
     ],
   },
 
@@ -238,6 +252,66 @@ const projects = [
     ],
     image: macera,
     source_code_link: 'https://github.com/blckdfly/macera-project',
+  },
+  {
+    name: 'Seallt dApp',
+    description: 'Contract management for efficient automation of contract processes.',
+    tags: [
+      {
+        name: 'contract',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'aptos',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'management',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: seallt,
+    source_code_link: 'https://github.com/blckdfly/seallt-dapp',
+  },
+  {
+    name: 'Ocarbn',
+    description: 'Blockchain-based Blue Carbon Credit Marketplace',
+    tags: [
+      {
+        name: 'blue carbon',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'marketplace',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: ocarbn,
+    source_code_link: 'https://github.com/blckdfly/ocarbn-by-alesha',
+  },
+  {
+    name: 'Aurora',
+    description: 'Decentralized marketplace that redefines the way people buy and sell goods',
+    tags: [
+      {
+        name: 'marketplace',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'infura',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: aurora,
+    source_code_link: 'https://github.com/blckdfly/aurora',
   },
 ];
 

@@ -20,16 +20,16 @@
 }
 
 .black-gradient {
-  background: #181C2E; /* fallback for old browsers */
+  background: #090909; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #181C2E,
-    #181C2E
+    #090909,
+    #090909
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #181C2E,
-    #181C2E
+    #090909,
+    #090909
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -45,8 +45,8 @@
 
 .green-pink-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #61c0ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #61c0ff 97.5%);
+  background: linear-gradient(90.13deg, #35f6fc 1.9%, #0FF7FF 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #35f6fc 1.9%, #0FF7FF 97.5%);
 }
 
 .orange-text-gradient {
@@ -66,16 +66,16 @@
 }
 
 .green-text-gradient {
-  background: #11998e; /* fallback for old browsers */
+  background: #0FF7FF; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #11998e,
-    #38ef7d
+    #35f6fc,
+    #0FF7FF
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #11998e,
-    #38ef7d
+    #35f6fc,
+    #0FF7FF
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,16 +83,16 @@
 
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */
-  background: #00cea8; /* fallback for old browsers */
+  background: #0FF7FF; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #61c0ff,
-    #00cea8
+    #35f6fc,
+    #0FF7FF
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #61c0ff,
-    #00cea8
+    #35f6fc,
+    #0FF7FF
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
